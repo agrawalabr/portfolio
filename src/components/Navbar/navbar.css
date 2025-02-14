@@ -1,0 +1,48 @@
+.navbar {
+    width: 100vw;
+    max-width: 80rem;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    object-fit: scale-down;
+    height: 4rem;
+    width: 4rem;
+}
+
+.menu {
+    margin-left: 22rem;
+}
+
+.menuItems {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.menuItems large{
+    color: var(--accent-color);
+}
+
+.menuItems:hover {
+    color: var(--accent-color);
+    transition: color 0.3s ease-in-out 0s
+}
+
+.resume {
+    color: var(--accent-color);
+    background-color: inherit;
+    border: 1px solid var(--accent-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.resume:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+}

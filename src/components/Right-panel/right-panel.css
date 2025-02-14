@@ -1,0 +1,30 @@
+.right-panel {
+    justify-items: center;
+    align-content: end;   
+    width: 4rem;
+}
+
+.email {
+    all: unset;
+    transform: translate(0, 0) scale(1) rotate(90deg);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    top: -13.9rem;
+}
+
+.email:hover {
+    transform: scale(1.1) rotate(90deg);
+    color: var(--accent-color);
+}
+
+.right-badge-line {
+    width: 10rem;
+    height: 1px;
+    transform: rotate(90deg);
+    background-color: var(--text-color);
+    opacity: 0.8;
+    position: relative;
+    top: -3.1rem;
+}

@@ -1,0 +1,72 @@
+{
+    "profile-name": "Abhishek Agrawal",
+    "profile-description": "I'm a Computer Engineer, I excel in architeching solutions that integrate Web Development, AI, and Data Engineering. Proficient in leveraging modern web technologies, cloud services, and machine learning to drive innovation and efficiency.",
+    "about-me": "",
+    "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
+    "education": [
+        {
+            "institution": "New York University",
+            "location": "New York, NY",
+            "degree": "Masters in Computer Engineering",
+            "gpa": "",
+            "years": "Aug 2024 - May 2026(Expected)",
+            "courses": [
+                "Machine Learning",
+                "Bigdata",
+                "Data Structures and Algorithm",
+                "Software Engineering"
+            ]
+        },
+        {
+            "institution": "Nagpur University",
+            "location": "Nagpur, India",
+            "degree": "Bachelors in Electronics Engineering",
+            "gpa": "8.12/10",
+            "years": "Aug 2017 - May 2021",
+            "courses": []
+        }
+    ],
+    "skills": { 
+        "Cloud Technologies":{
+            "AWS": "FaAws",
+            "AZURE": "VscAzure",
+            "Databricks": "SiDatabricks",
+            "Snowflake": "SiSnowflake"
+        },
+        "Programming": {
+            "Python": "FaPython", 
+            "Pyspark": "SiApachespark",
+            "Scala": "SiScala",
+            "Javascript": "SiJavascript",
+            "HTML": "SiHtml5",
+            "CSS": "SiCss3",
+            "Linux/Shell ": "SiLinux",
+            "JAVA": "FaJava",
+            "C": "SiC",
+            "C++": "SiCplusplus"
+        },
+        "Data Technologies": {
+            "SQL": "SiPostgresql",
+            "NoSQL": "SiMongodb",
+            "Airflow": "SiApacheairflow",
+            "Tableau": "SiTableau"
+        },
+        "Web Development": {
+            "React": "SiReact",
+            "Angular": "SiAngular",
+            "Adobe Tools": "SiAdobe",
+            "CI/CD": "IoInfinite",
+            "Git": "SiGit",
+            "Postman": "SiPostman"
+        },
+        "Agile Methodologies": {
+            "Jira": "SiJira",
+            "Confluence": "SiConfluence"            
+        },
+        "Hardware": {
+            "Arduino": "SiArduino",
+            "NodeMCU": "IoHardwareChip",
+            "Raspberry Pi": "SiRaspberrypi"
+        }
+    }
+}
