@@ -1,31 +1,43 @@
 {
     "profile-name": "Abhishek Agrawal",
-    "profile-description": "I'm a Computer Engineer, I excel in architeching solutions that integrate Web Development, AI, and Data Engineering. Proficient in leveraging modern web technologies, cloud services, and machine learning to drive innovation and efficiency.",
-    "about-me": "",
+    "profile-description": "I'm a AI & Data Solutions Engineer, I excel in architeching solutions that integrate Web Development, AI, and Data Engineering. Proficient in leveraging modern web technologies, cloud services, and machine learning to drive innovation and efficiency.",
+    "about-me": {
+        "para1": "I'm passionate about transforming raw data into AI-driven solutions that drive innovation and efficiency. Whether it's building scalable <i>web applications, engineering robust big data pipelines, or deploying advanced machine learning models</i>, I thrive at the intersection of <b>technology, efficiency, and impact</b>.",
+        "para2":"I'm pursuing my <i> Master's in Computer Engineering at New York University</i>, deepening my expertise in Big Data, Machine Learning, and Cloud Computing. Currently, I am <span> actively seeking Summer 2025 internship opportunities in the U.S. </span> to apply my skills in a practical, fast-paced environment while learning from industry leaders.",
+        "para3": "Previously, as a <i>Big Data & Backend Engineer</i> at a <a href='https://www.infocepts.ai/' target='_blank' rel='noopener noreferrer'>Data & AI Consulting Firm</a>, I worked with <a href='https://www.nbcuniversal.com/' target='_blank' rel='noopener noreferrer'>NBC Universal Media</a>, developing AI-powered chatbots, optimizing ETL workflows, and migrating data pipelines to AWS serverless architecture. As a <i>Co-founder</i> of our <a href='https://in.linkedin.com/company/ar-consultancyservices/' target='_blank' rel='noopener noreferrer'>innovation initiative (ARCS)</a>, I designed smart inventory systems, multilingual translation tools, and led teams to develop real-world tech solutions, mentoring aspiring engineers along the way.",
+        "para4": "I love solving complex problems with scalable architectures and intelligent automation. If you're looking for someone who can bridge the gap between data, AI, and software engineering, let's connect!"
+    },
     "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
-    "education": [
-        {
-            "institution": "New York University",
-            "location": "New York, NY",
-            "degree": "Masters in Computer Engineering",
-            "gpa": "",
-            "years": "Aug 2024 - May 2026(Expected)",
-            "courses": [
-                "Machine Learning",
-                "Bigdata",
-                "Data Structures and Algorithm",
-                "Software Engineering"
-            ]
-        },
-        {
-            "institution": "Nagpur University",
-            "location": "Nagpur, India",
-            "degree": "Bachelors in Electronics Engineering",
-            "gpa": "8.12/10",
+    "experiences": {
+        "exp1": {
+            "name": "Nagpur University (RCOEM)@https://www.rknec.edu/",
             "years": "Aug 2017 - May 2021",
-            "courses": []
+            "position": "Bachelors in Electronics Engineering",
+            "comment": "",
+            "location": "Nagpur, MH"
+        },
+        "exp2": {
+            "name": "AR Counsultancy Services@https://in.linkedin.com/company/ar-consultancyservices",
+            "years": "Aug 2021 - Aug 2024",
+            "position": "Co-founder (Solutions Architect)",
+            "comment": "",
+            "location": "Nagpur, MH"
+        },
+        "exp3": {
+            "name": "Infocepts@https://www.infocepts.ai/",
+            "years": "Aug 2021 - Aug 2024",
+            "position": "Big Data & Backend Engineer",
+            "comment": "NBCUniversal Contractor@https://www.nbcuniversal.com/",
+            "location": "Nagpur, MH"
+        },
+        "exp4": {
+            "name": "New York University@https://www.nyu.edu/",
+            "years": "Aug 2024 - May 2026 (Expected)",
+            "position": "Masters in Computer Engineering",
+            "comment": "",
+            "location": "New York, NY"
         }
-    ],
+    },
     "skills": { 
         "Cloud Technologies":{
             "AWS": "FaAws",
@@ -49,7 +61,8 @@
             "SQL": "SiPostgresql",
             "NoSQL": "SiMongodb",
             "Airflow": "SiApacheairflow",
-            "Tableau": "SiTableau"
+            "Tableau": "SiTableau",
+            "Kafka": "SiApachekafka"
         },
         "Web Development": {
             "React": "SiReact",

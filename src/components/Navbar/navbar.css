@@ -14,7 +14,7 @@
 }
 
 .menu {
-    margin-left: 22rem;
+    margin-left: 30rem;
 }
 
 .menuItems {
@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-.menuItems large{
+.menuItems span{
     color: var(--accent-color);
 }
 

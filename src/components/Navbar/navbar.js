@@ -5,7 +5,7 @@ import {Link} from 'react-scroll';
 
 const Navbar = () => {
     const menuItems = [
-        { id: '01.', text: 'Home', link: 'home' },
+        { id: '01.', text: 'Home', link: 'about-me' },
         { id: '02.', text: 'Skills', link: 'skills' },
         { id: '03.', text: 'Experience', link: 'experience' },
         { id: '04.', text: 'Projects', link: 'projects' },
@@ -43,7 +43,7 @@ const Navbar = () => {
                 {menuItems.map(({id, text, link}) => (
                     <Link key={link} className='menuItems'
                     onClick={() => handleMenuClick(id)}>
-                        <large>{id}</large> {text}
+                        <span>{id}</span> {text}
                     </Link>
                 ))}
             </div>
