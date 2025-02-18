@@ -1,10 +1,10 @@
 .horizontal-div {
-  height: 100vh;
   display: grid;
   grid-template-areas: 
       'navbar'
       'profile';
-  grid-template-rows: 0.4fr auto;
+  grid-template-rows: 100px 1fr;
+  height: 100vh;
 }
 
 .navbar {
@@ -14,11 +14,11 @@
 .vertical-div {
   max-width: 85rem;
   justify-self: center;
-  align-content: center;
   grid-area: profile;
   display: grid;
   grid-template-areas: 'left-panel main right-panel';
   grid-template-columns: 2fr 4.5fr 0.5fr;
+  margin-bottom: auto;
 }
 
 .left-panel {

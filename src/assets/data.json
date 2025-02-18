@@ -4,7 +4,7 @@
     "about-me": {
         "para1": "I'm passionate about transforming raw data into AI-driven solutions that drive innovation and efficiency. Whether it's building scalable <i>web applications, engineering robust big data pipelines, or deploying advanced machine learning models</i>, I thrive at the intersection of <b>technology, efficiency, and impact</b>.",
         "para2":"I'm pursuing my <i> Master's in Computer Engineering at New York University</i>, deepening my expertise in Big Data, Machine Learning, and Cloud Computing. Currently, I am <span> actively seeking Summer 2025 internship opportunities in the U.S. </span> to apply my skills in a practical, fast-paced environment while learning from industry leaders.",
-        "para3": "Previously, as a <i>Big Data & Backend Engineer</i> at a <a href='https://www.infocepts.ai/' target='_blank' rel='noopener noreferrer'>Data & AI Consulting Firm</a>, I worked with <a href='https://www.nbcuniversal.com/' target='_blank' rel='noopener noreferrer'>NBC Universal Media</a>, developing AI-powered chatbots, optimizing ETL workflows, and migrating data pipelines to AWS serverless architecture. As a <i>Co-founder</i> of our <a href='https://in.linkedin.com/company/ar-consultancyservices/' target='_blank' rel='noopener noreferrer'>innovation initiative (ARCS)</a>, I designed smart inventory systems, multilingual translation tools, and led teams to develop real-world tech solutions, mentoring aspiring engineers along the way.",
+        "para3": "Previously, as a <i>Big Data & Backend Engineer</i> at a <a href='https://www.infocepts.ai/' target='_blank' rel='noopener noreferrer'>Data & AI Consulting Firm</a>, I worked with a global media and entertainment giant <a href='https://www.nbcuniversal.com/' target='_blank' rel='noopener noreferrer'>NBC Universal Media</a>, developing AI-powered chatbots, optimizing ETL workflows, and migrating data pipelines to AWS serverless architecture. As a <i>Co-founder</i> of our <a href='https://in.linkedin.com/company/ar-consultancyservices/' target='_blank' rel='noopener noreferrer'>innovation initiative (ARCS)</a>, I designed smart inventory systems, multilingual translation tools, and led teams to develop real-world tech solutions, mentoring aspiring engineers along the way.",
         "para4": "I love solving complex problems with scalable architectures and intelligent automation. If you're looking for someone who can bridge the gap between data, AI, and software engineering, let's connect!"
     },
     "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
@@ -36,6 +36,24 @@
             "position": "Masters in Computer Engineering",
             "comment": "",
             "location": "New York, NY"
+        }
+    },
+    "projects": {
+        "1": {
+            "name": "Abhishek Agrawal's Portfolio",
+            "description": "A portfolio website built with a modern tech stack, featuring an intuitive interface to showcase my projects, skills, and experiences, with seamless navigation and optimized performance.",
+            "image": "portfolio.png",
+            "link": "https://agrawalabr-portfolio.web.app",
+            "github": "https://github.com/agrawalabr/portfolio",
+            "skills": ["React", "HTML", "CSS", "Javascript", "github"]
+        },
+        "2":{
+            "name": "Churn Predictor",
+            "description": "A Churn Prediction Machine Learning Pipeline achieving 96.3% accuracy, designed to proactively reduce churn by delivering personalized incentives and targeted offers.",
+            "image": "churn-predictor.png",
+            "link": "https://churn-predictor.web.app",
+            "github": "https://github.com/agrawalabr/churn-predictor",
+            "skills": ["AWS", "Python", "Scikit-learn", "Pandas", "github"]
         }
     },
     "skills": { 

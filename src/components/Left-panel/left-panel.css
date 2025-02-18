@@ -4,7 +4,7 @@
     justify-items: center;
     background-color: var(--panel-bg);
     border-radius: 1rem;
-    margin: 1rem;
+    margin: auto 1rem;
 }
 
 .profile-image {

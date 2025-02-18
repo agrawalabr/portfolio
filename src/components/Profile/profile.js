@@ -2,6 +2,8 @@ import React from 'react'
 import './profile.css'
 import parse from 'html-react-parser';
 import details from '../../assets/data.json'
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 const Profile = () => {
     const scrollToSection = (sectionId) => {
@@ -12,14 +14,12 @@ const Profile = () => {
   return (
     <div className='profile'>  
         <section id='about-me'>
-            
-
-            <h2 className='section-heading' onClick={() => scrollToSection('about-me')}>
+            <h2 className='section-heading' style={{marginTop:0}} onClick={() => scrollToSection('about-me')}>
                 <div className='highlight'>01.</div>About Me<div className='line'></div></h2>
             <div className='about-me'>
                 <h3> Big Data | Machine Learning | Web Development | Cloud Computing </h3>
                 {Object.entries(details['about-me']).map(([key, value]) => (
-                    <p>{parse(value)}</p>
+                    <p key={key}>{parse(value)}</p>
                 ))}
             </div>
         </section>
@@ -28,9 +28,9 @@ const Profile = () => {
                 <div className='highlight'>03.</div>Skills<div className='line'></div></h2>
             <div className='skills-container'>
                 {Object.entries(details.skills).map(([type, value]) => (
-                    <>
+                    <div key={type}> 
                         <h3 key={type} className='type-heading'>{type}</h3>
-                        <div key={type} className='skills-grid'> 
+                        <div className='skills-grid'>
                         {Object.entries(value).map(([skill, icon]) => (
                             <div key={skill} className='skills-item'>
                                 {icon.toLowerCase().startsWith('fa') ? React.createElement(require(`react-icons/fa`)[icon], { className: "social-icon" }) : 
@@ -42,7 +42,7 @@ const Profile = () => {
                             </div>
                         ))}
                         </div>
-                    </>
+                    </div>
                 ))}
             </div>
         </section>
@@ -60,9 +60,8 @@ const Profile = () => {
                     <div key={key} className={key}>
                         <h3>{experience.name && experience.name.includes("@") ? <a href={experience.name.split("@")[1]} target="_blank" rel="noopener noreferrer">{experience.name.split("@")[0]}<br/></a> :
                             experience.name}</h3>
-                        <p>
-                            {experience.comment && experience.comment.includes("@") ? (<a href={experience.comment.split("@")[1]} target="_blank" rel="noopener noreferrer">{experience.comment.split("@")[0]}<br/></a>) : 
-                             experience.comment && (<span style={{ color: 'var(--text-color)', opacity: 0.8 }}>{experience.comment}<br/></span>)}
+                        <p>{experience.comment && experience.comment.includes("@") ? (<a href={experience.comment.split("@")[1]} target="_blank" rel="noopener noreferrer">{experience.comment.split("@")[0]}<br/></a>) : 
+                            experience.comment && (<span style={{ color: 'var(--text-color)', opacity: 0.8 }}>{experience.comment}<br/></span>)}
                            {experience.years}<br/>
                            {experience.position}<br/>
                            {experience.location}</p>
@@ -73,7 +72,21 @@ const Profile = () => {
         <section id='projects'>
             <h2 className='section-heading' onClick={() => scrollToSection('projects')}>
                 <div className='highlight'>04.</div>Projects<div className='line'></div></h2>
-                    
+                {Object.entries(details.projects).map(([key, project]) => (
+                    <div key={key} className='project-container'>
+                        <div className='project-image'>{project.image && <img src={require(`../../assets/${project.image}`)} alt={project.name} />}</div>
+                        <div className='project-item'>
+                            <div className='description'>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer"><h3>{project.name}<FaArrowUpRightFromSquare className='arrow-icon' /></h3></a>
+                                {project.description && <p>{project.description}</p>}
+                            </div>
+                            {project.skills && <div className='resources'>{project.skills?.map(skill => skill === 'github' ? 
+                            (<a className='github-a' href={project.github} target="_blank" rel="noopener noreferrer"><FaGithub className='github-icon' /></a>):
+                            (<span key={skill}>{skill} </span>)
+                            )}</div>}
+                        </div>
+                    </div>
+                ))}
         </section>
         <section id='contact'>
             <h2 className='section-heading' onClick={() => scrollToSection('contact')}>
