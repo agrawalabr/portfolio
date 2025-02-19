@@ -107,6 +107,14 @@
             "C": "SiC",
             "C++": "SiCplusplus"
         },
+        "Machine Learning": {
+            "Regression": "GoGraph",
+            "Clustering": "PiGraphThin",
+            "PCA": "TbArrowsJoin2",
+            "NLTK": "FaPython",
+            "Pytorch": "SiPytorch",
+            "TensorFlow": "SiTensorflow"
+        },
         "Data Technologies": {
             "SQL": "SiPostgresql",
             "NoSQL": "SiMongodb",

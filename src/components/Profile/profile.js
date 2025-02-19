@@ -6,6 +6,23 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
 const Profile = () => {
+    // const iconLibraries = {
+    //     fa: 'react-icons/fa',
+    //     si: 'react-icons/si',
+    //     io: 'react-icons/io5',
+    //     vsc: 'react-icons/vsc',
+    //     go: 'react-icons/go',
+    //     bi: 'react-icons/bi',
+    // };
+
+    // const getIconComponent = (icon) => {
+    //     const prefix = Object.keys(iconLibraries).find((pref) => icon.toLowerCase().startsWith(pref))
+    //     if (prefix) {
+    //         return React.createElement(require(iconLibraries[prefix])[icon], { className: 'social-icon' });
+    //     }
+    //     return null;
+    // };
+
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     };
@@ -33,10 +50,14 @@ const Profile = () => {
                         <div className='skills-grid'>
                         {Object.entries(value).map(([skill, icon]) => (
                             <div key={skill} className='skills-item'>
+                                {/* {getIconComponent(icon)} */}
                                 {icon.toLowerCase().startsWith('fa') ? React.createElement(require(`react-icons/fa`)[icon], { className: "social-icon" }) : 
                                 icon.toLowerCase().startsWith('si') ? React.createElement(require(`react-icons/si`)[icon], { className: "social-icon" }) : 
                                 icon.toLowerCase().startsWith('io') ? React.createElement(require(`react-icons/io5`)[icon], { className: "social-icon" }) : 
                                 icon.toLowerCase().startsWith('vsc') ? React.createElement(require(`react-icons/vsc`)[icon], { className: "social-icon" }) :
+                                icon.toLowerCase().startsWith('go') ? React.createElement(require(`react-icons/go`)[icon], { className: "social-icon" }) :
+                                icon.toLowerCase().startsWith('pi') ? React.createElement(require(`react-icons/pi`)[icon], { className: "social-icon" }) :
+                                icon.toLowerCase().startsWith('tb') ? React.createElement(require(`react-icons/tb`)[icon], { className: "social-icon" }) :
                                 null}
                                 {skill}
                             </div>
