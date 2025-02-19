@@ -39,7 +39,31 @@
         }
     },
     "projects": {
-        "1": {
+        "1":{
+            "name": "Churn Predictor",
+            "description": "A Churn Prediction Machine Learning Pipeline achieving 96.3% accuracy, designed to proactively reduce churn by delivering personalized incentives and targeted offers.",
+            "image": "churn-predictor.png",
+            "link": "",
+            "github": "https://github.com/agrawalabr/churn-predictor",
+            "skills": ["AWS", "Python", "Scikit-learn", "Pandas", "github"]
+        },
+        "2": {
+            "name": "AI-Powered Intelligent Assistant",
+            "description": "An all-in-one web application leveraging NLP, machine learning, and OpenAI services to enable automated document workflows, intelligent knowledge retrieval, and secure role-based access, enhancing operational efficiency and decision intelligence.",
+            "image": "ai-assistant.png",
+            "link": "",
+            "github": "",
+            "skills": ["AWS", "OpenAI", "NLTK", "Flask"]
+        },
+        "3": {
+            "name": "Metadata-Driven Data Pipeline Manager",
+            "description": "A dynamic web service automating data pipeline orchestration, management, and sharing across Snowflake, S3, Databricks and other data warehouses, enhancing efficiency and scalability.",
+            "image": "data-pipeline-manager.png",
+            "link": "",
+            "github": "",
+            "skills": ["AWS", "Snowflake", "Databricks", "Python", "Scala", "Airflow"]
+        },
+        "4": {
             "name": "Abhishek Agrawal's Portfolio",
             "description": "A portfolio website built with a modern tech stack, featuring an intuitive interface to showcase my projects, skills, and experiences, with seamless navigation and optimized performance.",
             "image": "portfolio.png",
@@ -47,13 +71,21 @@
             "github": "https://github.com/agrawalabr/portfolio",
             "skills": ["React", "HTML", "CSS", "Javascript", "github"]
         },
-        "2":{
-            "name": "Churn Predictor",
-            "description": "A Churn Prediction Machine Learning Pipeline achieving 96.3% accuracy, designed to proactively reduce churn by delivering personalized incentives and targeted offers.",
-            "image": "churn-predictor.png",
-            "link": "https://churn-predictor.web.app",
-            "github": "https://github.com/agrawalabr/churn-predictor",
-            "skills": ["AWS", "Python", "Scikit-learn", "Pandas", "github"]
+        "5": {
+            "name": "Inventory Manager",
+            "description": "A metadata-driven web application integrated with RFID technology, enabling real-time tracking, automated stock updates, and enhanced security for efficient inventory management.",
+            "image": "jstock.png",
+            "link": "",
+            "github": "",
+            "skills": ["AWS", "Angular", "Flask", "PostgreSQL"]
+        },
+        "6":{
+            "name": "Multilingual Transliterator",
+            "description": "A metadata-driven web application integrated with RFID technology, enabling real-time tracking, automated stock updates, and enhanced security for efficient inventory management.",
+            "image": "transliterator.png",
+            "link": "",
+            "github": "",
+            "skills": ["Python", "Tkinter", "G-Translate", "SQLite3"]
         }
     },
     "skills": { 

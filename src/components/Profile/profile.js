@@ -17,7 +17,7 @@ const Profile = () => {
             <h2 className='section-heading' style={{marginTop:0}} onClick={() => scrollToSection('about-me')}>
                 <div className='highlight'>01.</div>About Me<div className='line'></div></h2>
             <div className='about-me'>
-                <h3> Big Data | Machine Learning | Web Development | Cloud Computing </h3>
+                <h3>Machine Learning | Big Data | Web Development | Cloud Computing </h3>
                 {Object.entries(details['about-me']).map(([key, value]) => (
                     <p key={key}>{parse(value)}</p>
                 ))}
@@ -72,16 +72,17 @@ const Profile = () => {
         <section id='projects'>
             <h2 className='section-heading' onClick={() => scrollToSection('projects')}>
                 <div className='highlight'>04.</div>Projects<div className='line'></div></h2>
-                {Object.entries(details.projects).map(([key, project]) => (
+                {Object.entries(details.projects).slice(0, 5).map(([key, project]) => (
                     <div key={key} className='project-container'>
                         <div className='project-image'>{project.image && <img src={require(`../../assets/${project.image}`)} alt={project.name} />}</div>
                         <div className='project-item'>
                             <div className='description'>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer"><h3>{project.name}<FaArrowUpRightFromSquare className='arrow-icon' /></h3></a>
-                                {project.description && <p>{project.description}</p>}
+                                {project.link ? (<a href={project.link} target="_blank" rel="noopener noreferrer"><h3>{project.name}<FaArrowUpRightFromSquare className='arrow-icon' /></h3></a>) :
+                                (<h3 style={{color: 'var(--accent-color)'}}>{project.name}</h3>)}
+                                {project.description && <p>{project.description}</p>} 
                             </div>
                             {project.skills && <div className='resources'>{project.skills?.map(skill => skill === 'github' ? 
-                            (<a className='github-a' href={project.github} target="_blank" rel="noopener noreferrer"><FaGithub className='github-icon' /></a>):
+                            (<a key={skill} className='github-a' href={project.github} target="_blank" rel="noopener noreferrer"><FaGithub className='github-icon' /></a>):
                             (<span key={skill}>{skill} </span>)
                             )}</div>}
                         </div>
@@ -91,21 +92,22 @@ const Profile = () => {
         <section id='contact'>
             <h2 className='section-heading' onClick={() => scrollToSection('contact')}>
                 <div className='highlight'>05.</div>Contact me<div className='line'></div></h2>
-            <div className='contact-form'>
-            <h3>Leave a message and let's connect!</h3>
-                <form>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" required></input>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required></input>
-                    <label htmlFor="mobile">Phone No:</label>
-                    <input type="mobile" id="mobile" name="mobile" required></input>
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+            <div className='contact-div'>
+                <div className='contact-form'>
+                    <h3>Leave a message and let's connect!</h3>
+                    <form>
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" id="name" name="name" required></input>
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" id="email" name="email" required></input>
+                        <label htmlFor="mobile">Phone No:</label>
+                        <input type="mobile" id="mobile" name="mobile" required></input>
+                        <label htmlFor="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-
         </section>
         <section className="footer">
             <a className="built-by" href="https://github.com/agrawalabr/portfolio" target="_blank" rel="noopener noreferrer">

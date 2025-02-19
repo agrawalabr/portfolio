@@ -1,6 +1,6 @@
 .navbar {
     width: 100vw;
-    max-width: 80rem;
+    max-width: 85%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .menu {
-    margin-left: 30rem;
+    margin-left: auto;
 }
 
 .menuItems {
