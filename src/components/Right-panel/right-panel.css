@@ -1,7 +1,7 @@
 .right-panel {
     justify-items: center;
     align-content: end;   
-    width: 4rem;
+    width: 2rem;
 }
 
 .email {
@@ -11,7 +11,7 @@
     padding: 0.5rem;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     position: relative;
-    top: -13.9rem;
+    top: -30%;
 }
 
 .email:hover {
@@ -26,5 +26,5 @@
     background-color: var(--text-color);
     opacity: 0.8;
     position: relative;
-    top: -3.1rem;
+    top: -6%;
 }

@@ -9,7 +9,7 @@ function App() {
     <div className='horizontal-div'>
       <Navbar className='navbar' />
       <div className='vertical-div'>
-        <LeftPanel className='left-panel' />
+        <div className='left-panel'><LeftPanel /></div>
         <Profile className='profile' />
         <RightPanel className='right-panel' />
       </div>

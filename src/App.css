@@ -9,20 +9,23 @@
 
 .navbar {
   grid-area: navbar;
+  max-width: 85%;
 }
 
 .vertical-div {
-  max-width: 85rem;
-  justify-self: center;
+  max-width: 95%;
   grid-area: profile;
   display: grid;
   grid-template-areas: 'left-panel main right-panel';
-  grid-template-columns: 2fr 4.5fr 0.5fr;
+  grid-template-columns: 2fr 4.5fr auto;
+  justify-self: center;
   margin-bottom: auto;
 }
 
 .left-panel {
   grid-area: left-panel;
+  align-content: center;
+  justify-items: center;
 }
 
 .profile {
@@ -31,4 +34,60 @@
 
 .right-panel {
   grid-area: right-panel;
+}
+
+@media (max-width: 900px) or (main-width: 450px) {
+  .horizontal-div {
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    margin: auto;
+    max-width: 95%;
+    height: unset;
+  }
+
+  .navbar {
+    max-width: 90%;
+  }
+
+  .vertical-div {
+    display: flex;
+    margin: auto;
+    justify-self: center;
+  }
+
+  .left-panel {
+    display: none;
+  }
+
+  .right-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .horizontal-div {
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    margin: auto;
+    max-width: 95%;
+    height: unset;
+  }
+
+  .navbar {
+    max-width: 80%;
+  }
+
+  .vertical-div {
+    display: flex;
+    max-width: 95%;
+    justify-self: center;
+  }
+
+  .left-panel {
+    display: none;
+  }
+
+  .right-panel {
+    display: none;
+  }
 }

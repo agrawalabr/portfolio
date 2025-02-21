@@ -28,7 +28,7 @@ const LeftPanel = () => {
     };
 
     return (
-        <div className='left-panel'>
+        <div className='left-panel-org'>
             <div className='profile-image'>
                 <img src={photo} alt='Profile' />
             </div>

@@ -1,6 +1,5 @@
 .navbar {
     width: 100vw;
-    max-width: 85%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -46,4 +45,162 @@
     background-color: var(--accent-color);
     color: var(--text-color);
     transition: background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+}
+
+.dropdown-menu, .menu-icon {
+    display: none;
+}
+
+@media (max-width: 900px) or (main-width: 450px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .menu, .resume {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 2rem;
+        display: flex;
+        color: var(--accent-color);
+        align-self: center;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        width: 15rem;
+        background: var(--background-color);
+        border-radius: 1rem;
+        border: 1px solid var(--panel-bg);
+        box-shadow: 0px 0px 12px var(--panel-bg);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .menuItems {
+        display: block;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .menuItems:hover {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .dropdown-resume {
+        color: var(--accent-color);
+        background-color: inherit;
+        border: 1px solid var(--accent-color);
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: inherit;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .dropdown-resume:hover {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .logo {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .menu, .resume {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 2rem;
+        display: flex;
+        color: var(--accent-color);
+        align-self: center;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        width: 15rem;
+        background: var(--background-color);
+        border-radius: 1rem;
+        border: 1px solid var(--panel-bg);
+        box-shadow: 0px 0px 12px var(--panel-bg);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .menuItems {
+        display: block;
+        padding: 0.75rem 1rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .menuItems:hover {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .dropdown-resume {
+        color: var(--accent-color);
+        background-color: inherit;
+        border: 1px solid var(--accent-color);
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: inherit;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .dropdown-resume:hover {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease-in-out 0s, color 0.3s ease-in-out 0s;
+    }
 }

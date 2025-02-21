@@ -1,10 +1,11 @@
-.left-panel {
+.left-panel-org {
     padding: 1.5rem;
-    align-content: center;
-    justify-items: center;
+    display: flex;
+    align-items: center;
     background-color: var(--panel-bg);
     border-radius: 1rem;
-    margin: auto 1rem;
+    flex-direction: column;
+    min-height: unset;
 }
 
 .profile-image {
@@ -48,4 +49,18 @@
 .social-icon:hover {
     color: var(--accent-color);
     transform: scale(1.1);
+}
+
+@media (max-width: 900px) or (main-width: 450px) {
+    .left-panel-org {
+        margin: 0;
+        min-height: 30rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .left-panel-org {
+        margin: 0;
+        min-height: 30rem;
+    }
 }

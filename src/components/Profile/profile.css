@@ -111,15 +111,18 @@
 
 /* Experiences */
 .timeline {
+    min-width: max-content;
     display: grid;
     grid-template-areas: 'left mid right';
-    grid-template-columns: 2fr 0.35fr 2fr;
+    grid-template-columns: 2fr 0.3fr 2fr;
+    padding: 0.5rem 0;
+    margin: auto;
 }
 
 .mid {
     grid-area: mid;
     width: 100%;
-    height: 35rem;
+    height: 36rem;
     display: grid;
     grid-template-areas: 
         'empty2 grad empty1'
@@ -176,8 +179,9 @@
 
 .exp1, .exp3 {
     grid-area: left;
+    justify-self: right;
     position: relative;
-    margin-left: auto;
+    right: 0.3rem;
     width: 15rem;
     height: fit-content;
     border-top: 1px solid var(--accent-color);
@@ -198,7 +202,8 @@
 .exp2, .exp4 {
     grid-area: right;
     position: relative;
-    right: -1.1rem;
+    justify-self: left;
+    right: -1.3rem;
     width: 15rem;
     height: fit-content;
     border-top: 1px solid var(--accent-color);
@@ -246,10 +251,10 @@
 }
 
 .project-image img {
-    /* object-fit: cover; */
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .project-item {
@@ -407,4 +412,128 @@ a {
 
 a:hover {
     color: var(--accent-color);
+}
+
+.media-panel {
+    display: none;
+}
+
+@media (max-width: 900px) or (main-width: 550px) {
+    .media-panel {
+        margin: 1.5rem 0;
+        display: flex;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr auto 1fr;
+    }
+
+    .mid {
+        column-gap: 0.25rem;
+    }
+
+    .exp1:hover, .exp3:hover {
+        padding-right: 0.2rem;
+    }
+    
+    .exp2:hover, .exp4:hover {
+        padding-left: 0.2rem;
+    }
+
+    .exp1, .exp3 {
+        padding-right: 0.5rem;
+    }
+
+    .exp2, .exp4 {
+        padding-left: 0.5rem;
+    }
+
+    .project-image {
+        max-height: 7rem;
+    }
+
+    .project-item {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .media-panel {
+        margin: 1.5rem 0;
+        display: flex;
+    }
+
+    .profile::-webkit-scrollbar {
+        display: none;
+    }
+
+    .timeline {
+        min-width: 90%;
+        padding: 1rem;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 'mid right';
+    }
+
+    .mid {
+        column-gap: 0.3rem;
+    }
+
+    .timeline h3 {
+        margin: 0.5rem 0;
+    }
+
+    .exp1:hover, .exp3:hover {
+        padding-left: unset;
+    }
+    
+    .exp2:hover, .exp4:hover {
+        padding-left: unset;
+    }
+
+    .exp1, .exp3 {
+        grid-area: right;
+        justify-self: left;
+        right: -1.3rem;
+        padding-left: 0.3rem;
+        padding-right: 0.4rem;
+        text-align: right; 
+    }
+
+    .exp2, .exp4 {
+        padding-left: 2rem;
+        padding-right: 0.4rem;
+    }
+
+    .exp1 {
+        bottom: -28rem;
+    }
+
+    .exp2 {
+        bottom: -18rem;
+    }
+
+    .exp3 {
+        bottom: -9rem;
+    }
+
+    .exp4 {
+        bottom: -0.5rem;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-height: unset;
+        padding: 1.5rem 0;
+    }
+
+    .project-image {
+        min-height: 12rem;
+    }
+
+    .project-item {
+        padding-left: 0;
+        gap: 1rem;
+    }
 }

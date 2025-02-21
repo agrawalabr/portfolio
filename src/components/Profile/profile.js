@@ -4,25 +4,9 @@ import parse from 'html-react-parser';
 import details from '../../assets/data.json'
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import LeftPanel from '../Left-panel/left-panel.js';
 
 const Profile = () => {
-    // const iconLibraries = {
-    //     fa: 'react-icons/fa',
-    //     si: 'react-icons/si',
-    //     io: 'react-icons/io5',
-    //     vsc: 'react-icons/vsc',
-    //     go: 'react-icons/go',
-    //     bi: 'react-icons/bi',
-    // };
-
-    // const getIconComponent = (icon) => {
-    //     const prefix = Object.keys(iconLibraries).find((pref) => icon.toLowerCase().startsWith(pref))
-    //     if (prefix) {
-    //         return React.createElement(require(iconLibraries[prefix])[icon], { className: 'social-icon' });
-    //     }
-    //     return null;
-    // };
-
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     };
@@ -30,6 +14,9 @@ const Profile = () => {
     // TODO- ML and LLM to be added to data.json
   return (
     <div className='profile'>  
+        <section className='media-panel'>
+            <LeftPanel/>
+        </section>
         <section id='about-me'>
             <h2 className='section-heading' style={{marginTop:0}} onClick={() => scrollToSection('about-me')}>
                 <div className='highlight'>01.</div>About Me<div className='line'></div></h2>
@@ -50,7 +37,6 @@ const Profile = () => {
                         <div className='skills-grid'>
                         {Object.entries(value).map(([skill, icon]) => (
                             <div key={skill} className='skills-item'>
-                                {/* {getIconComponent(icon)} */}
                                 {icon.toLowerCase().startsWith('fa') ? React.createElement(require(`react-icons/fa`)[icon], { className: "social-icon" }) : 
                                 icon.toLowerCase().startsWith('si') ? React.createElement(require(`react-icons/si`)[icon], { className: "social-icon" }) : 
                                 icon.toLowerCase().startsWith('io') ? React.createElement(require(`react-icons/io5`)[icon], { className: "social-icon" }) : 
@@ -79,12 +65,12 @@ const Profile = () => {
                 </div>
                 {Object.entries(details.experiences).map(([key, experience]) => (
                     <div key={key} className={key}>
-                        <h3>{experience.name && experience.name.includes("@") ? <a href={experience.name.split("@")[1]} target="_blank" rel="noopener noreferrer">{experience.name.split("@")[0]}<br/></a> :
-                            experience.name}</h3>
-                        <p>{experience.comment && experience.comment.includes("@") ? (<a href={experience.comment.split("@")[1]} target="_blank" rel="noopener noreferrer">{experience.comment.split("@")[0]}<br/></a>) : 
-                            experience.comment && (<span style={{ color: 'var(--text-color)', opacity: 0.8 }}>{experience.comment}<br/></span>)}
-                           {experience.years}<br/>
-                           {experience.position}<br/>
+                        <h3>{experience.name && experience.name.includes("@") ? <a href={experience.name.split("@")[1]} target="_blank" rel="noopener noreferrer">{experience.name.split("@")[0]}</a> :
+                            experience.name} {experience.comment && experience.comment.includes("@") ? (<a href={experience.comment.split("@")[1]} target="_blank" rel="noopener noreferrer">{experience.comment.split("@")[0]}<br/></a>) : 
+                           experience.comment && (<span style={{ color: 'var(--text-color)', opacity: 0.8 }}>{experience.comment}<br/></span>)}
+                           </h3>
+                        <p>{experience.years}<br/>
+                          {experience.position}<br/>
                            {experience.location}</p>
                     </div>
                 ))}

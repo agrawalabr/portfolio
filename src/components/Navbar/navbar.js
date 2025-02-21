@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../../assets/logo.png';
 import {Link} from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const menuItems = [
         { id: '01.', text: 'Home', link: 'about-me' },
         { id: '02.', text: 'Skills', link: 'skills' },
@@ -39,14 +42,30 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <img src={logo} alt="logo" className='logo'/>
+
+            <div className='menu-icon' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {isMenuOpen ? <FaTimes /> : <FaBars />}
+            </div>
+
+            <div className={`dropdown-menu ${isMenuOpen ? 'active' : ''}`}>
+                {menuItems.map(({ id, text, link }) => (
+                    <Link key={link} className='menuItems' onClick={() => handleMenuClick(id)}>
+                        <span>{id}</span> {text}
+                    </Link>
+                ))}
+                <button className='dropdown-resume' onClick={handleResumeClick}>
+                    Resume
+                </button>
+            </div>
+
             <div className='menu'>
-                {menuItems.map(({id, text, link}) => (
-                    <Link key={link} className='menuItems'
-                    onClick={() => handleMenuClick(id)}>
+                {menuItems.map(({ id, text, link }) => (
+                    <Link key={link} className='menuItems' onClick={() => handleMenuClick(id)}>
                         <span>{id}</span> {text}
                     </Link>
                 ))}
             </div>
+
             <button className='resume' onClick={handleResumeClick}>
                 Resume
             </button>
