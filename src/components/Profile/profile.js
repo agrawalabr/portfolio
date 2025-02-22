@@ -1,17 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './profile.css'
 import parse from 'html-react-parser';
 import details from '../../assets/data.json'
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import LeftPanel from '../Left-panel/left-panel.js';
+import { initGmailAPI, signInWithGoogle, sendEmail } from "../../services/send-email.js";
 
 const Profile = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        mobile: "",
+        message: "",
+    });
+
+    useEffect(() => {
+        initGmailAPI();
+    }, []);
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const isSignedIn = await signInWithGoogle();
+        if (isSignedIn) {
+            await sendEmail(
+                "your-email@example.com", // Replace with your email
+                `New Contact Request from ${formData.name}`,
+                `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.mobile}\n\nMessage:\n${formData.message}`
+            );
+        }
+    };
+
     const scrollToSection = (sectionId) => {
         document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     };
-    // TODO- store contact us these to a csv or a data file on s3
-    // TODO- ML and LLM to be added to data.json
+
   return (
     <div className='profile'>  
         <section className='media-panel'>
@@ -102,15 +129,15 @@ const Profile = () => {
             <div className='contact-div'>
                 <div className='contact-form'>
                     <h3>Leave a message and let's connect!</h3>
-                    <form>
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" id="name" name="name" required></input>
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" required></input>
+                    <form onSubmit={handleSubmit}>
+                        <label htmlFor="name">Name: *</label>
+                        <input type="text" id="name" name="name" required onChange={handleChange}></input>
+                        <label htmlFor="email">Email: *</label>
+                        <input type="email" id="email" name="email" required onChange={handleChange}></input>
                         <label htmlFor="mobile">Phone No:</label>
-                        <input type="mobile" id="mobile" name="mobile" required></input>
+                        <input type="mobile" id="mobile" name="mobile" onChange={handleChange}></input>
                         <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message" required onChange={handleChange}></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
