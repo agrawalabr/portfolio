@@ -1,5 +1,6 @@
 import React from 'react';
 import './left-panel.css';
+import parse from 'html-react-parser';
 import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
 import { SiGmail } from "react-icons/si";
 import photo from '../../assets/profile.png';
@@ -34,7 +35,7 @@ const LeftPanel = () => {
             </div>
             <h1 className='profile-name'>{details['profile-name']}</h1>
             <p className='profile-description'>
-                {details['profile-description']}
+                {parse(details['profile-description'])}
             </p>
             <div className='social-links'>
                 <a href="https://www.linkedin.com/in/abhishek-agrawal-360472128" target="_blank" rel="noopener noreferrer">

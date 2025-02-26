@@ -11,7 +11,6 @@ const Profile = () => {
         document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     };
     // TODO- store contact us these to a csv or a data file on s3
-    // TODO- ML and LLM to be added to data.json
   return (
     <div className='profile'>  
         <section className='media-panel'>
