@@ -8,6 +8,7 @@
         "para4": "<p>Deeply committed to solving <strong>complex engineering challenges</strong> through <strong>scalable architectures, intelligent automation, and cutting-edge AI integration</strong>. Always looking to collaborate on <strong>high-impact projects at the intersection of data, AI, and software engineering</strong>.</p>"
     },
     "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
+    "resume": "https://drive.google.com/file/d/1hYmxxKR9n8RJUuiCvsggazKIFgMiSl9E/view?usp=sharing",
     "experiences": {
         "exp1": {
             "name": "Nagpur University (RCOEM)@https://www.rknec.edu/",
@@ -72,7 +73,7 @@
             "skills": ["React", "HTML", "CSS", "Javascript", "github"]
         },
         "5": {
-            "name": "Inventory Manager",
+            "name": "Store Management System",
             "description": "A metadata-driven web application integrated with RFID technology, enabling real-time tracking, automated stock updates, and enhanced security for efficient inventory management.",
             "image": "jstock.png",
             "link": "",

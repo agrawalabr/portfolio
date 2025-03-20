@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import logo from '../../assets/logo.png';
-import {Link} from 'react-scroll';
+import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import details from '../../assets/data.json'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,18 +26,8 @@ const Navbar = () => {
     }
 
     const handleResumeClick = () => {
-        const option = prompt("Please select an option:\n1. Resume\n2. Cover Letter");
-        const documents = {
-            '1': 'resume.pdf',
-            '2': 'cover-letter.pdf'
-        };
-
-        const selectedDoc = documents[option];
-        if (selectedDoc) {
-            window.open(`https://your-s3-bucket.s3.amazonaws.com/${selectedDoc}`, '_blank');
-        } else {
-            alert('Invalid option selected');
-        }
+        const resumeUrl = details.resume;
+        window.open(resumeUrl, '_blank');
     };
 
     return (
