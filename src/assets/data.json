@@ -8,7 +8,7 @@
         "para4": "<p>Deeply committed to solving <strong>complex engineering challenges</strong> through <strong>scalable architectures, intelligent automation, and cutting-edge AI integration</strong>. Always looking to collaborate on <strong>high-impact projects at the intersection of data, AI, and software engineering</strong>.</p>"
     },
     "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
-    "resume": "https://drive.google.com/file/d/1hYmxxKR9n8RJUuiCvsggazKIFgMiSl9E/view?usp=sharing",
+    "resume": "https://drive.google.com/file/d/1gol60OoheIzpjrywDOjaOYpk13wc0hAg/view?usp=drive_link",
     "experiences": {
         "exp1": {
             "name": "Nagpur University (RCOEM)@https://www.rknec.edu/",
@@ -25,10 +25,10 @@
             "location": "Nagpur, MH"
         },
         "exp3": {
-            "name": "Infocepts@https://www.infocepts.ai/",
+            "name": "NBCUniversal@https://www.nbcuniversal.com/",
             "years": "Aug 2021 - Aug 2024",
             "position": "Big Data & Backend Engineer",
-            "comment": "(NBCUniversal)@https://www.nbcuniversal.com/",
+            "comment": "(via Infocepts)@https://www.infocepts.ai/",
             "location": "Nagpur, MH"
         },
         "exp4": {
@@ -59,7 +59,7 @@
         "3": {
             "name": "Metadata-Driven Data Pipeline Manager",
             "description": "A dynamic web service automating data pipeline orchestration, management, and sharing across Snowflake, S3, Databricks and other data warehouses, enhancing efficiency and scalability.",
-            "image": "data-pipeline-manager.png",
+            "image": "Metadata-Driven Data Pipeline Manager.png",
             "link": "",
             "github": "",
             "skills": ["AWS", "Snowflake", "Databricks", "Python", "Scala", "Airflow"]
