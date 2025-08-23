@@ -25,10 +25,10 @@ const Navbar = () => {
         }
     }
 
-    const handleResumeClick = () => {
-        const resumeUrl = details.resume;
-        window.open(resumeUrl, '_blank');
-    };
+const handleResumeClick = () => {
+    const resumePath = require(`../../assets/${details.resume}`);
+    window.open(resumePath, '_blank');
+};
 
     return (
         <nav className='navbar'>
