@@ -3,8 +3,7 @@ import './left-panel.css';
 import parse from 'html-react-parser';
 import { FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
 import { SiGmail } from "react-icons/si";
-// import photo from '../../assets/profile.png';
-import photo from '../../assets/photo.jpg';
+import photo from '../../assets/profile.png';
 import details from '../../assets/data.json'
 
 const LeftPanel = () => {
