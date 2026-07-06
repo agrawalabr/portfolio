@@ -1,144 +1,183 @@
 {
     "profile-name": "Abhishek Agrawal",
-    "profile-description": "<p>AI & Data Solutions Engineer with expertise in architecting end-to-end solutions that integrate Web Development, AI, and Data Engineering. Passionate about transforming complex data into actionable insights and AI-driven automation leveraging modern web technologies, cloud services, and machine learning.</p>",
+    "profile-tagline": "Data & Software Engineer · USA",
+    "profile-description": "<p>Actively seeking opportunities in USA. <br> SME - Data Fabric, Data Catalog & Lineage, Governance, Terraform(IaC),  ETL/ELT, AI/ML, RAG, Backend(Python), Frontend(React), CI/CD across AWS, Snowflake, Databricks. Recently graduated from NYU @2026, Former Data & Software Engineering @NBCUniversal.</p>",
     "about-me": {
-        "para1": "Passionate about building intelligent, scalable, and impact-driven solutions, combining <strong>AI, big data, and cloud technologies</strong>. Experienced in developing <strong>high-performance web applications, engineering robust ETL pipelines, and deploying machine learning models</strong> that enhance automation and decision-making.",
-        "para2":"<p>Currently pursuing a <strong>Master's in Computer Engineering at New York University</strong>, specializing in <strong>Big Data, Machine Learning, and Cloud Computing</strong>. Actively seeking <strong>Summer 2025 internship opportunities in the U.S.</strong> to apply advanced technical expertise in a dynamic, fast-paced environment.</p>",
-        "para3": "<p>Previously contributed as a <strong>Big Data & Backend Engineer</strong> at a leading Data & AI consulting firm <a href='https://www.infocepts.ai/' target='_blank' rel='noopener noreferrer'>Infocepts</a>, collaborating with <a href='https://www.nbcuniversal.com/' target='_blank' rel='noopener noreferrer'>NBC Universal Media</a> to develop <strong>AI-powered chatbots, optimize large-scale ETL workflows, and migrate data pipelines to AWS serverless architecture</strong>. As a <strong>Co-founder</strong> of an innovation initiative, <a href='https://in.linkedin.com/company/ar-consultancyservices/' target='_blank' rel='noopener noreferrer'>AR Counsultancy Services</a>, spearheaded the development of <strong>smart inventory systems, multilingual translation tools</strong>, and led cross-functional teams to deliver <strong>real-world AI and data solutions</strong> while mentoring aspiring engineers.</p>",
-        "para4": "<p>Deeply committed to solving <strong>complex engineering challenges</strong> through <strong>scalable architectures, intelligent automation, and cutting-edge AI integration</strong>. Always looking to collaborate on <strong>high-impact projects at the intersection of data, AI, and software engineering</strong>.</p>"
+        "para1": "<p>Hey — I'm Abhishek. For the last <strong>5 years</strong>, I've been building <strong>metadata-driven, declarative data platforms</strong> that turn multi-terabyte chaos into trusted, business-ready data — with cataloging, lineage, GDPR/CCPA governance, zero-copy sharing, and cost/SLA-aware compute. My toolkit: <strong>Spark, Airflow, dbt, AWS, Snowflake, Databricks</strong>.</p>",
+        "para2": "<p>Currently at <strong>NYU</strong>, finishing my <strong>M.S. in Computer Engineering</strong> (May 2026, GPA 3.5) and serving as a <strong>Research Assistant</strong> — architecting a medallion lakehouse over <strong>~2 TB</strong> of MIT SuperCloud HPC telemetry and a two-stage diffusion system to forecast GPU power for datacenter capacity planning. Open to <strong>full-time Data Engineer roles in the U.S.</strong> for Summer 2026.</p>",
+        "para3": "<p>Before that, three years at <strong>NBCUniversal</strong> as a <strong>Data Engineer (Contractor)</strong>. Architected an <strong>enterprise data fabric</strong> across AWS, Snowflake, and Databricks — auto-generating pipelines, infrastructure, and orchestration from metadata (~<strong>75%</strong> faster time-to-market, ~<strong>20%</strong> infra savings). Processed <strong>~75 TB</strong> of ad-impression data, migrated <strong>Olympics 2024</strong> reporting to a serverless stack (under <strong>1 hour</strong> vs. a 2-hour SLA), and shipped a <strong>schema-grounded RAG assistant</strong> for text-to-SQL and document Q&amp;A.</p>",
+        "para4": "<p>I also extend into <strong>generative modeling, RAG, lakehouses, and vector databases</strong> — from credit-risk analytics on Databricks to decade-scale NYC housing market pipelines. I care about clean abstractions, policy-enforced self-service, and pipelines that don't wake you up at 3 AM.</p>"
     },
     "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
-    "resume": "Abhishek Agrawal Resume.pdf",
+    "resume": "Abhishek Agrawal DE.pdf",
     "experiences": {
         "exp1": {
-            "name": "Nagpur University (RCOEM)@https://www.rknec.edu/",
-            "years": "Aug 2017 - May 2021",
-            "position": "Bachelors in Electronics Engineering",
-            "comment": "",
-            "location": "Nagpur, MH"
+            "name": "New York University@https://www.nyu.edu/",
+            "badge": "most recent",
+            "years": "Dec 2025 - May 2026",
+            "position": "Research Assistant",
+            "comment": "HPC Telemetry Lakehouse & Power-Forecasting Pipeline\n(GCP, PySpark, PyTorch, Parquet)",
+            "location": "New York, NY"
         },
         "exp2": {
-            "name": "AR Counsultancy Services@https://in.linkedin.com/company/ar-consultancyservices",
-            "years": "Aug 2020 - Aug 2024",
-            "position": "Co-founder (Solutions Architect)",
-            "comment": "",
-            "location": "Nagpur, MH"
+            "name": "New York University@https://www.nyu.edu/",
+            "years": "Aug 2025 - Dec 2025",
+            "position": "Teaching Assistant",
+            "comment": "Data Engineering Course Support",
+            "location": "New York, NY"
         },
         "exp3": {
-            "name": "NBCUniversal@https://www.nbcuniversal.com/",
-            "years": "Aug 2021 - Aug 2024",
-            "position": "Big Data & Backend Engineer",
-            "comment": "(via Infocepts)@https://www.infocepts.ai/",
-            "location": "Nagpur, MH"
+            "name": "New York University@https://www.nyu.edu/",
+            "badge": "most recent",
+            "years": "Aug 2024 - May 2026",
+            "position": "M.S. in Computer Engineering",
+            "comment": "GPA: 3.5 / 4.0",
+            "location": "New York, NY"
         },
         "exp4": {
-            "name": "New York University@https://www.nyu.edu/",
-            "years": "Aug 2024 - May 2026 (Expected)",
-            "position": "Masters in Computer Engineering",
-            "comment": "",
-            "location": "New York, NY"
+            "name": "NBCUniversal@https://www.nbcuniversal.com/",
+            "years": "Aug 2021 - Aug 2024",
+            "position": "Data Engineer (Contractor)",
+            "comment": "Enterprise Data Fabric · Olympics 2024 ETL · Schema-Grounded RAG\n(AWS, Snowflake, Databricks, Airflow, Terraform)",
+            "location": "Pune, IN"
+        },
+        "exp5": {
+            "name": "Nagpur University (RCOEM)@https://www.rknec.edu/",
+            "years": "Aug 2017 - May 2021",
+            "position": "B.S. in Computer Engineering",
+            "comment": "GPA: 3.5 / 4.0",
+            "location": "Nagpur, IN"
         }
     },
     "projects": {
-        "1":{
-            "name": "Churn Predictor",
-            "description": "A Churn Prediction Machine Learning Pipeline achieving 96.3% accuracy, designed to proactively reduce churn by delivering personalized incentives and targeted offers.",
-            "image": "churn-predictor.png",
-            "link": "",
-            "github": "https://github.com/agrawalabr/churn-predictor",
-            "skills": ["AWS", "Python", "Scikit-learn", "Pandas", "github"]
-        },
-        "2": {
-            "name": "AI-Powered Intelligent Assistant",
-            "description": "An all-in-one web application leveraging NLP, machine learning, and OpenAI services to enable automated document workflows, intelligent knowledge retrieval, and secure role-based access, enhancing operational efficiency and decision intelligence.",
-            "image": "ai-assistant.png",
+        "1": {
+            "name": "Credit Risk GPT",
+            "description": "Credit-risk analytics platform over ~2.26M Lending Club loans — a governed Databricks lakehouse (Lakeflow Declarative Pipelines, Unity Catalog lineage/RBAC) materializing risk KPIs by grade, vintage, geography, and DTI. Extended with a RAG analyst assistant grounding credit-risk Q&A in CFPB regulatory complaint narratives alongside governed metrics — surfacing consumer-protection and compliance signals raw loan data alone misses.",
+            "image": "gpt.png",
             "link": "",
             "github": "",
-            "skills": ["AWS", "OpenAI", "NLTK", "Flask"]
+            "skills": ["Databricks", "PySpark", "Unity Catalog", "AWS S3", "Claude", "OpenAI", "RAG"]
+        },
+        "2": {
+            "name": "HPC Telemetry Lakehouse & Power-Forecasting Pipeline",
+            "description": "NYU research: medallion lakehouse over ~2 TB of MIT SuperCloud telemetry — 460K+ compute jobs (98K GPU), V100 GPUs, 9 months — with AQE, partitioning, and skew handling on a 16-node cluster (~80% latency cut). A two-stage diffusion system synthesizes SLURM job metadata and generates conditioned GPU power traces (peak Corr = 0.93) for datacenter power forecasting and capacity planning.",
+            "image": "DiT.mov",
+            "link": "",
+            "github": "",
+            "skills": ["Python", "PyTorch", "GCP", "PySpark", "Parquet", "SLURM"]
         },
         "3": {
-            "name": "Metadata-Driven Data Pipeline Manager",
-            "description": "A dynamic web service automating data pipeline orchestration, management, and sharing across Snowflake, S3, Databricks and other data warehouses, enhancing efficiency and scalability.",
+            "name": "Enterprise Data Fabric",
+            "description": "NBCUniversal declarative data platform: a SQL spec auto-provisions ingestion, transformation, orchestration, and IaC from metadata — collapsing new-pipeline delivery from weeks to hours (~75% faster). Graph-modeled catalog with cross-domain ontologies, automated lineage, GDPR/CCPA RBAC, SLA-driven compute across Lambda/EMR/Databricks/Snowflake (~20% cost savings), and zero-copy sharing — processing ~75 TB of ad-impression data with full observability.",
             "image": "Metadata-Driven Data Pipeline Manager.png",
             "link": "",
             "github": "",
-            "skills": ["AWS", "Snowflake", "Databricks", "Python", "Scala", "Airflow"]
+            "skills": ["AWS", "Snowflake", "Databricks", "Airflow", "Terraform", "Python", "Scala", "Kafka", "Iceberg"]
         },
         "4": {
+            "name": "Olympics 2024 Serverless ETL Migration",
+            "description": "Migrated Olympics 2024 ad-impression reporting from on-prem Cassandra and on-demand Databricks to a fully serverless AWS stack under a hard deadline. Re-architected fragmented legacy jobs into a config-driven Airflow framework with parallelized Spark and Lambda tasks — sustaining twice-daily full refresh of 60+ datasets and cutting end-to-end runtime from ~2 hours to under 1 hour (~50%), clearing the 2-hour SLA with headroom.",
+            "image": "olympics.jpg",
+            "link": "",
+            "github": "",
+            "skills": ["AWS", "EMR Serverless", "Lambda", "Airflow", "Redshift", "Spark", "Python"]
+        },
+        "5": {
+            "name": "Schema-Grounded Enterprise Retrieval (RAG)",
+            "description": "Schema-grounded RAG assistant (React/Flask, CI/CD) unifying text-to-SQL and document Q&A by retrieving over a graph metadata catalog (KeyBERT-indexed) — grounding SQL to real tables/columns and citation-backed answers from docs, wikis, and PDFs. SQL validation before execution and event-driven metadata refresh counter knowledge drift — one RBAC-governed interface cutting analyst self-service from ~30 minutes to under a minute.",
+            "image": "LLM-Based Data Intelligence Platform.png",
+            "link": "",
+            "github": "",
+            "skills": ["RAG", "ChatGPT", "Hugging Face", "Python", "React", "PostgreSQL"]
+        },
+        
+        "6": {
+            "name": "NYC Housing Pulse (2015–2025)",
+            "description": "S3-backed batch pipeline ingesting ~900K NYC Dept. of Finance property-sale transactions across all 5 boroughs (2015–2025) — resolving inconsistent schemas, malformed addresses, and duplicate parcels into a clean serving layer. Borough- and year-level analytics (price-per-sqft, sales volume, affordability trends) power a QuickSight dashboard tracing a decade of market shifts across neighborhoods and price tiers.",
+            "image": "",
+            "link": "",
+            "github": "",
+            "skills": ["AWS S3", "QuickSight", "Python", "ETL"]
+        },
+        "7": {
             "name": "Abhishek Agrawal's Portfolio",
-            "description": "A portfolio website built with a modern tech stack, featuring an intuitive interface to showcase my projects, skills, and experiences, with seamless navigation and optimized performance.",
-            "image": "portfolio.png",
+            "description": "This site — React SPA with a custom dark palette, glass surfaces, conic-gradient portrait ring, alternating experience timeline, ambient gradients, and a FormSubmit-backed contact flow. Tuned for fast first paint and readable long-form engineering narrative.",
+            "image": "",
             "link": "https://agrawalabr-portfolio.web.app",
             "github": "https://github.com/agrawalabr/portfolio",
             "skills": ["React", "HTML", "CSS", "Javascript", "github"]
         },
-        "5": {
-            "name": "Store Management System",
-            "description": "A metadata-driven web application integrated with RFID technology, enabling real-time tracking, automated stock updates, and enhanced security for efficient inventory management.",
-            "image": "jstock.png",
+        "8": {
+            "name": "Churn Prediction & Incentive Engine",
+            "description": "End-to-end AWS pattern for churn: curated features in S3, SageMaker training and batch scoring, DynamoDB for low-latency scores, and Lambda functions driving a real-time incentive and segmentation service for lifecycle campaigns and experiments.",
+            "image": "/projects/churn-incentive-engine.svg",
             "link": "",
-            "github": "",
-            "skills": ["AWS", "Angular", "Flask", "PostgreSQL"]
-        },
-        "6":{
-            "name": "Multilingual Transliterator",
-            "description": "A metadata-driven web application integrated with RFID technology, enabling real-time tracking, automated stock updates, and enhanced security for efficient inventory management.",
-            "image": "transliterator.png",
-            "link": "",
-            "github": "",
-            "skills": ["Python", "Tkinter", "G-Translate", "SQLite3"]
+            "github": "https://github.com/agrawalabr/churn-predictor",
+            "skills": ["AWS", "SageMaker", "DynamoDB", "Lambda", "Python", "github"]
         }
     },
-    "skills": { 
-        "Cloud Technologies":{
-            "AWS": "FaAws",
-            "AZURE": "VscAzure",
-            "Databricks": "SiDatabricks",
-            "Snowflake": "SiSnowflake"
-        },
+    "skills": {
         "Programming": {
-            "Python": "FaPython", 
-            "Pyspark": "SiApachespark",
+            "Python": "FaPython",
+            "SQL": "FaDatabase",
+            "PySpark": "SiApachespark",
             "Scala": "SiScala",
-            "Javascript": "SiJavascript",
-            "HTML": "SiHtml5",
-            "CSS": "SiCss3",
-            "Linux/Shell ": "SiLinux",
-            "JAVA": "FaJava",
-            "C": "SiC",
-            "C++": "SiCplusplus"
-        },
-        "Machine Learning": {
-            "Regression": "GoGraph",
-            "Clustering": "PiGraphThin",
-            "PCA": "TbArrowsJoin2",
-            "NLTK": "FaPython",
-            "Pytorch": "SiPytorch",
-            "TensorFlow": "SiTensorflow"
-        },
-        "Data Technologies": {
-            "SQL": "SiPostgresql",
-            "NoSQL": "SiMongodb",
-            "Airflow": "SiApacheairflow",
-            "Tableau": "SiTableau",
-            "Kafka": "SiApachekafka"
-        },
-        "Web Development": {
+            "Java": "FaJava",
+            "Shell/Bash": "SiLinux",
+            "JavaScript": "SiJavascript",
             "React": "SiReact",
             "Angular": "SiAngular",
-            "Adobe Tools": "SiAdobe",
+            "HTML": "SiHtml5",
+            "CSS": "SiCss3",
+            "TailwindCSS": "SiTailwindcss"
+        },
+        "Ingestion & Orchestration": {
+            "Spark": "SiApachespark",
+            "Kafka": "SiApachekafka",
+            "Flink": "SiApacheflink",
+            "Airflow": "SiApacheairflow",
+            "dbt": "SiDbt",
+            "ETL/ELT": "TbArrowsJoin2",
+            "Batch/Stream": "PiGraphThin"
+        },
+        "Cloud & Governance": {
+            "AWS": "FaAws",
+            "GCP": "SiGooglecloud",
+            "Snowflake": "SiSnowflake",
+            "Databricks": "SiDatabricks",
+            "Redshift": "FaAws",
+            "Unity Catalog": "SiDatabricks",
+            "Iceberg Catalog": "FaAws",
+            "Great Expectations": "SiPython",
+            "RBAC/IAM": "FaShieldAlt"
+        },
+        "Architectures & Modeling": {
+            "Data Fabric": "TbArrowsJoin2",
+            "Lakehouse": "FaWater",
+            "Metadata Catalog": "SiGraphql",
+            "Zero-Copy Sharing": "SiSnowflake",
+            "Dimensional Modeling": "SiPostgresql"
+        },
+        "DataOps & Platform Engineering": {
+            "Terraform": "SiTerraform",
+            "CloudFormation": "FaAws",
+            "Docker": "SiDocker",
+            "Kubernetes": "SiKubernetes",
             "CI/CD": "IoInfinite",
             "Git": "SiGit",
-            "Postman": "SiPostman"
+            "CloudWatch": "FaAws",
+            "Flask": "SiFlask",
+            "FastAPI": "SiFastapi"
         },
-        "Agile Methodologies": {
-            "Jira": "SiJira",
-            "Confluence": "SiConfluence"            
-        },
-        "Hardware": {
-            "Arduino": "SiArduino",
-            "NodeMCU": "IoHardwareChip",
-            "Raspberry Pi": "SiRaspberrypi"
+        "AI/ML & Retrieval": {
+            "PyTorch": "SiPytorch",
+            "RAG": "SiOpenai",
+            "Vector Search": "SiElasticsearch",
+            "MLOps": "SiMlflow",
+            "Text-to-SQL": "SiPostgresql",
+            "LLM Integration": "SiOpenai",
+            "Scikit-learn": "SiScikitlearn",
+            "Hugging Face": "SiHuggingface"
         }
     }
 }

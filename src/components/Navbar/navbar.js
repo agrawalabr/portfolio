@@ -18,11 +18,19 @@ const Navbar = () => {
 
     const handleMenuClick = (id) => {
         const selectedItem = menuItems.find(item => item.id === id);
-        if (selectedItem) {
-            document.getElementById(selectedItem.link).scrollIntoView({
-                behavior: 'smooth'
-            });
+        if (!selectedItem) return;
+        const section = document.getElementById(selectedItem.link);
+        const container = document.querySelector('.profile');
+        if (!section) return;
+        const remPx = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+        const offset = 1.5 * remPx;
+        if (container) {
+            const top = section.offsetTop - container.offsetTop - offset;
+            container.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
+        } else {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+        setIsMenuOpen(false);
     }
 
 const handleResumeClick = () => {

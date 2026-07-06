@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Metadata-driven data platform">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#07080c"/>
+      <stop offset="100%" style="stop-color:#11141c"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6a8bff"/>
+      <stop offset="100%" style="stop-color:#eb4057"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg2)"/>
+  <rect x="48" y="48" width="864" height="4" fill="url(#accent2)" opacity="0.9"/>
+  <text x="480" y="268" text-anchor="middle" fill="#ecedf2" font-family="ui-sans-serif,system-ui,sans-serif" font-size="30" font-weight="600">Metadata-driven platform</text>
+  <text x="480" y="318" text-anchor="middle" fill="rgba(236,237,242,0.55)" font-family="ui-sans-serif,system-ui,sans-serif" font-size="17">AWS · Snowflake · Databricks · Airflow</text>
+</svg>

@@ -34,11 +34,14 @@ const LeftPanel = () => {
                 <img src={photo} alt='Profile' />
             </div>
             <h1 className='profile-name'>{details['profile-name']}</h1>
-            <p className='profile-description'>
+            {details['profile-tagline'] && (
+                <span className='profile-tagline'>{details['profile-tagline']}</span>
+            )}
+            <div className='profile-description'>
                 {parse(details['profile-description'])}
-            </p>
+            </div>
             <div className='social-links'>
-                <a href="https://www.linkedin.com/in/abhishek-agrawal-360472128" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/agrawalabr" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="social-icon" />
                 </a>
                 <a href="https://github.com/agrawalabr" target="_blank" rel="noopener noreferrer">
