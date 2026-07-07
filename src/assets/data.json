@@ -2,6 +2,7 @@
     "profile-name": "Abhishek Agrawal",
     "profile-tagline": "Data & Software Engineer · USA",
     "profile-description": "<p>Actively seeking opportunities in USA. <br> SME - Data Fabric, Data Catalog & Lineage, Governance, Terraform(IaC),  ETL/ELT, AI/ML, RAG, Backend(Python), Frontend(React), CI/CD across AWS, Snowflake, Databricks. Recently graduated from NYU @2026, Former Data & Software Engineering @NBCUniversal.</p>",
+    "about-tagline": "Give me a spec, I'll build the system that builds the rest!",
     "about-me": {
         "para1": "<p>Hey — I'm Abhishek. For the last <strong>5 years</strong>, I've been building <strong>metadata-driven, declarative data platforms</strong> that turn multi-terabyte chaos into trusted, business-ready data — with cataloging, lineage, GDPR/CCPA governance, zero-copy sharing, and cost/SLA-aware compute. My toolkit: <strong>Spark, Airflow, dbt, AWS, Snowflake, Databricks</strong>.</p>",
         "para2": "<p>Currently at <strong>NYU</strong>, finishing my <strong>M.S. in Computer Engineering</strong> (May 2026, GPA 3.5) and serving as a <strong>Research Assistant</strong> — architecting a medallion lakehouse over <strong>~2 TB</strong> of MIT SuperCloud HPC telemetry and a two-stage diffusion system to forecast GPU power for datacenter capacity planning. Open to <strong>full-time Data Engineer roles in the U.S.</strong> for Summer 2026.</p>",

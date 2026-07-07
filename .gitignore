@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 test*
+test.py
+test.ipynb
+test.js
