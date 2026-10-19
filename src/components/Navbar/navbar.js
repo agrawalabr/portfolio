@@ -1,75 +1,113 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './navbar.css';
-import logo from '../../assets/logo.png';
-import { Link } from 'react-scroll';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import details from '../../assets/data.json'
+import details from '../../assets/data.json';
+import BrandLogo from '../BrandLogo/BrandLogo';
+import { FaMoon, FaSun } from 'react-icons/fa6';
+
+const SECTIONS = [
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'work', label: 'Work' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'proud', label: 'Achievements' },
+  { id: 'reach', label: 'Contact' },
+];
+
+const THEME_KEY = 'aa-portfolio-theme';
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [active, setActive] = useState('landing');
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    if (typeof window === 'undefined') return 'light';
+    return localStorage.getItem(THEME_KEY) || 'light';
+  });
 
-    const menuItems = [
-        { id: '01.', text: 'Home', link: 'about-me' },
-        { id: '02.', text: 'Skills', link: 'skills' },
-        { id: '03.', text: 'Experience', link: 'experience' },
-        { id: '04.', text: 'Projects', link: 'projects' },
-        { id: '05.', text: 'Contact', link: 'contact' }
-    ];
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem(THEME_KEY, theme);
+  }, [theme]);
 
-    const handleMenuClick = (id) => {
-        const selectedItem = menuItems.find(item => item.id === id);
-        if (!selectedItem) return;
-        const section = document.getElementById(selectedItem.link);
-        const container = document.querySelector('.profile');
-        if (!section) return;
-        const remPx = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-        const offset = 1.5 * remPx;
-        if (container) {
-            const top = section.offsetTop - container.offsetTop - offset;
-            container.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
-        } else {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-        setIsMenuOpen(false);
-    }
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
-const handleResumeClick = () => {
-    const resumePath = require(`../../assets/${details.resume}`);
-    window.open(resumePath, '_blank');
-};
+  useEffect(() => {
+    const ids = ['landing', ...SECTIONS.map((s) => s.id)];
+    const nodes = ids.map((id) => document.getElementById(id)).filter(Boolean);
+    if (!nodes.length) return undefined;
 
-    return (
-        <nav className='navbar'>
-            <img src={logo} alt="logo" className='logo'/>
-
-            <div className='menu-icon' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                {isMenuOpen ? <FaTimes /> : <FaBars />}
-            </div>
-
-            <div className={`dropdown-menu ${isMenuOpen ? 'active' : ''}`}>
-                {menuItems.map(({ id, text, link }) => (
-                    <Link key={link} className='menuItems' onClick={() => handleMenuClick(id)}>
-                        <span>{id}</span> {text}
-                    </Link>
-                ))}
-                <button className='dropdown-resume' onClick={handleResumeClick}>
-                    Resume
-                </button>
-            </div>
-
-            <div className='menu'>
-                {menuItems.map(({ id, text, link }) => (
-                    <Link key={link} className='menuItems' onClick={() => handleMenuClick(id)}>
-                        <span>{id}</span> {text}
-                    </Link>
-                ))}
-            </div>
-
-            <button className='resume' onClick={handleResumeClick}>
-                Resume
-            </button>
-        </nav>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible[0]?.target?.id) setActive(visible[0].target.id);
+      },
+      { rootMargin: '-18% 0px -55% 0px', threshold: [0.12, 0.4, 0.65] }
     );
+
+    nodes.forEach((n) => observer.observe(n));
+    return () => observer.disconnect();
+  }, []);
+
+  const go = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setOpen(false);
+  };
+
+  const openResume = () => {
+    window.open(require(`../../assets/${details.resume}`), '_blank');
+  };
+
+  return (
+    <header className={`nav-split${scrolled ? ' is-scrolled' : ''}`}>
+      <button type="button" className="nav-brand" onClick={() => go('landing')}>
+        <BrandLogo />
+        <span className="nav-name">{details['profile-name']}</span>
+      </button>
+
+      <button
+        type="button"
+        className="nav-burger"
+        aria-label="Menu"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span />
+        <span />
+      </button>
+
+      <nav className={`nav-pill${open ? ' is-open' : ''}`} aria-label="Primary">
+        <button
+          type="button"
+          className="nav-theme"
+          aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
+          onClick={() => setTheme((t) => (t === 'light' ? 'dark' : 'light'))}
+        >
+          {theme === 'light' ? <FaMoon /> : <FaSun />}
+        </button>
+
+        {SECTIONS.map((s) => (
+          <button
+            key={s.id}
+            type="button"
+            className={`nav-link${active === s.id ? ' is-active' : ''}`}
+            onClick={() => go(s.id)}
+          >
+            {s.label}
+          </button>
+        ))}
+
+        <button type="button" className="nav-resume" onClick={openResume}>
+          Resume
+        </button>
+      </nav>
+    </header>
+  );
 };
 
 export default Navbar;

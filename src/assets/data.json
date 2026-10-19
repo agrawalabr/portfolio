@@ -1,207 +1,284 @@
 {
-    "profile-name": "Abhishek Agrawal",
-    "profile-tagline": "Data Engineer · San Jose, CA",
-    "profile-description": "<p>Data Engineer with <strong>5+ years</strong> building scalable cloud data platforms on <strong>AWS &amp; GCP</strong>. Recently graduated from <strong>NYU</strong> (MS CE, 2026). Former <strong>Data Engineer II @ NBCUniversal</strong> — Olympics reporting 60 mins ahead of SLA, <strong>30%</strong> cost cut, <strong>~75%</strong> faster delivery.</p>",
-    "about-tagline": "Seeking to turn your toughest data problems into faster, cheaper, automated solutions.",
-    "about-me": {
-        "para1": "<p>Hey — I'm Abhishek. For the last <strong>5+ years</strong>, I've built scalable, resilient cloud data solutions on <strong>AWS &amp; GCP</strong> — leading migrations and automating operations with <strong>Python, SQL, Spark, Airflow, Snowflake, and Databricks</strong>.</p>",
-        "para2": "<p>I just finished my <strong>M.S. in Computer Engineering at NYU</strong> (May 2026, GPA 3.5) and served as a <strong>Research Assistant</strong> — speeding up processing ~5x on <strong>~2 TB</strong> of MIT SuperCloud HPC telemetry and generating GPU power traces (peak Corr = 0.93) for datacenter forecasting. Based in <strong>San Jose, CA</strong> and open to <strong>full-time Data Engineer roles</strong>.</p>",
-        "para3": "<p>At <strong>NBCUniversal</strong>, I progressed from <strong>Data Engineer I → II</strong>. As DE II, I delivered C-suite Olympics'24 ad-performance reports <strong>60 mins ahead of SLA</strong> with zero breaches, cut monthly cost <strong>30%</strong> by leading a team of 5 to migrate 40+ on-prem jobs to Spark on EMR Serverless, and built an Airflow framework that now powers <strong>30+ pipelines</strong> across linear, digital, and CTV. Earlier, I cut pipeline delivery time ~<strong>75%</strong> with one-click, SQL-driven features for audience overlap and ETL over <strong>150M+ household records</strong>.</p>",
-        "para4": "<p>I also ship product-minded side work — from <strong>JobSimp</strong>, a Manifest V3 Chrome extension with RAG-powered job autofill, to decade-scale NYC housing sales analytics. I care about cost-aware compute, zero-breach SLAs, and pipelines that don't wake you up at 3 AM.</p>"
+  "profile-name": "Abhishek Agrawal",
+  "profile-short": "Abhishek",
+  "profile-initials": "AA",
+  "profile-role": "Data Engineer",
+  "profile-focus": "Architectures that are fast, cheap, and trusted",
+  "profile-tagline": "Data Engineer · San Jose, CA",
+  "intro-video": "intro-cutout-hq.webm",
+  "about-greeting": "Hi,",
+  "about-headline": "I'm Abhishek — a Data Engineer with 5+ years shipping architectures that businesses actually trust.",
+  "about-story": [
+    "I build on AWS & GCP with Spark, Airflow, Snowflake, and Databricks — migrations, orchestration, and cost-aware automation.",
+    "My expertise is turning complex business problems into single-click solutions — the kind of tools that let the business move without waiting on a data engineer."
+  ],
+  "recommendations": [
+    {
+      "quote": "Abhishek consistently demonstrated exceptional knowledge across Spark, Airflow, Lambda, S3, Glue, Athena, Databricks, Scala, and Python — with dependability that often landed work ahead of schedule.",
+      "from": "Amar Kalelkar",
+      "org": "Manager · NBCUniversal",
+      "relation": "Client · July 2024"
     },
-    "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
-    "resume": "Abhishek Agrawal DE.pdf",
-    "experiences": {
-        "exp1": {
-            "name": "New York University@https://www.nyu.edu/",
-            "badge": "most recent",
-            "years": "Dec 2025 - May 2026",
-            "position": "Research Assistant",
-            "comment": "HPC Telemetry Lakehouse & Power-Forecasting Pipeline\n(GCP, PySpark, PyTorch, Parquet)",
-            "location": "New York, NY"
-        },
-        "exp2": {
-            "name": "New York University@https://www.nyu.edu/",
-            "years": "Aug 2025 - Dec 2025",
-            "position": "Teaching Assistant",
-            "comment": "Data Engineering Course — designed & graded full assessment set for 45 students",
-            "location": "New York, NY"
-        },
-        "exp3": {
-            "name": "New York University@https://www.nyu.edu/",
-            "years": "Aug 2024 - May 2026",
-            "position": "M.S. in Computer Engineering",
-            "comment": "GPA: 3.5 / 4.0",
-            "location": "New York, NY"
-        },
-        "exp4": {
-            "name": "NBCUniversal Media (Comcast)@https://www.nbcuniversal.com/",
-            "years": "Sept 2022 - Aug 2024",
-            "position": "Data Engineer II",
-            "comment": "C-Suite Olympics'24 Migration · Alt-Currency Automation\n(AWS EMR Serverless, Spark/Scala, Airflow, Iceberg, Redshift)",
-            "location": "Pune, IN"
-        },
-        "exp5": {
-            "name": "NBCUniversal Media (Comcast)@https://www.nbcuniversal.com/",
-            "years": "Aug 2021 - Aug 2022",
-            "position": "Data Engineer I",
-            "comment": "Audience Insights Hub (NBCUnified · Performance Insights Hub)\n(Snowflake, Databricks, Airflow, Terraform, Flask)",
-            "location": "Pune, IN"
-        },
-        "exp6": {
-            "name": "Nagpur University (RCOEM)@https://www.rknec.edu/",
-            "years": "Aug 2017 - May 2021",
-            "position": "B.S. in Computer Engineering",
-            "comment": "GPA: 3.5 / 4.0",
-            "location": "Nagpur, IN"
-        }
+    {
+      "quote": "His innovative mindset regularly offered new ideas that enhanced our workflows. He thinks critically, solves complex problems efficiently, and is a top-tier engineer for robust data pipelines.",
+      "from": "Amar Kalelkar",
+      "org": "Manager · NBCUniversal",
+      "relation": "Client · July 2024"
     },
-    "projects": {
-        "1": {
-            "name": "JobSimp",
-            "description": "Manifest V3 Chrome extension that cut per-job application time from ~20 mins to a few minutes — one-click autofill, automated tracking, and job filtering for 30+ applications a day. Scores any posting with a fit verdict and match/miss breakdown, then tailors resume, cover letter, and essay answers via RAG over an IndexedDB property graph, keeping Gemini/Claude/OpenAI token usage low per application.",
-            "image": "",
-            "link": "",
-            "github": "",
-            "skills": ["JavaScript", "Chrome Extension", "IndexedDB", "RAG", "Gemini", "Claude", "OpenAI"]
-        },
-        "2": {
-            "name": "HPC Telemetry Lakehouse & Power-Forecasting Pipeline",
-            "description": "NYU research: sped up processing ~5x on ~2 TB of MIT SuperCloud telemetry (460K+ jobs) with a medallion lakehouse on a 16-node Spark cluster — AQE, partitioning, and skew handling. A sliding-window autoregressive diffusion transformer conditioned on SLURM job metadata generates GPU power traces for 4,400+ unseen jobs (peak Corr = 0.93) for datacenter power forecasting before jobs run.",
-            "image": "DiT.mov",
-            "link": "",
-            "github": "",
-            "skills": ["Python", "PyTorch", "GCP", "PySpark", "Parquet", "SLURM"]
-        },
-        "3": {
-            "name": "C-Suite Olympics'24 Migration",
-            "description": "NBCUniversal DE II rotation: delivered executive ad-performance reports 60 mins ahead of SLA with zero breaches through the Paris Games. Led a team of 5 to migrate 40+ on-prem jobs to Spark (Scala) on EMR Serverless — cutting monthly cost 30% and ending daily failures. Built an Airflow orchestration framework that absorbed a 60% scope expansion and now powers 30+ pipelines across linear, digital, and CTV on an Iceberg lakehouse with Redshift.",
-            "image": "olympics.jpg",
-            "link": "",
-            "github": "",
-            "skills": ["AWS", "EMR Serverless", "Spark", "Scala", "Airflow", "Iceberg", "Redshift"]
-        },
-        "4": {
-            "name": "Audience Insights Hub",
-            "description": "NBCUniversal DE I rotation (NBCUnified · Performance Insights Hub): cut pipeline delivery time ~75% with one-click, SQL-driven features for audience overlap, segment activation, and ETL — letting business teams match 150M+ household records without a data engineer. Shared business-name catalog and zero-copy sharing connected siloed departments; SLA-based cluster presets cut compute cost up to ~20%; CCPA/PII purge jobs and RBAC governed compliance across data clean rooms.",
-            "image": "Metadata-Driven Data Pipeline Manager.png",
-            "link": "",
-            "github": "",
-            "skills": ["AWS", "Snowflake", "Databricks", "Airflow", "Terraform", "Spark", "Flask", "PostgreSQL"]
-        },
-        "5": {
-            "name": "Schema-Grounded Enterprise Retrieval (RAG)",
-            "description": "Schema-grounded RAG assistant (React/Flask, CI/CD) unifying text-to-SQL and document Q&A by retrieving over a graph metadata catalog (KeyBERT-indexed) — grounding SQL to real tables/columns and citation-backed answers from docs, wikis, and PDFs. SQL validation before execution and event-driven metadata refresh counter knowledge drift — one RBAC-governed interface cutting analyst self-service from ~30 minutes to under a minute.",
-            "image": "LLM-Based Data Intelligence Platform.png",
-            "link": "",
-            "github": "",
-            "skills": ["RAG", "Azure OpenAI", "Hugging Face", "Python", "React", "Flask", "PostgreSQL"]
-        },
-        "6": {
-            "name": "Churn Prediction & Incentive Engine",
-            "description": "End-to-end AWS pattern for churn: curated features in S3, SageMaker training and batch scoring, DynamoDB for low-latency scores, and Lambda functions driving a real-time incentive and segmentation service for lifecycle campaigns and experiments.",
-            "image": "Churn Prediction & Incentive Engine.png",
-            "link": "",
-            "github": "https://github.com/agrawalabr/churn-predictor",
-            "skills": ["AWS", "SageMaker", "DynamoDB", "Lambda", "Python", "github"]
-        },
-        "7": {
-            "name": "NYC Housing Sales (2015–2025)",
-            "description": "NYU coursework: turned ~900K messy NYC Dept. of Finance property-sale records into a clean, analysis-ready lakehouse — resolving inconsistent schemas, malformed addresses, and duplicate parcels. Traced a decade of price-per-sqft, sales-volume, and affordability shifts in an interactive Tableau dashboard by borough, neighborhood, and price tier.",
-            "image": "",
-            "link": "",
-            "github": "",
-            "skills": ["Python", "AWS S3", "Tableau", "ETL"]
-        },
-        "8": {
-            "name": "Alt-Currency Automation",
-            "description": "NBCUniversal DE II rotation: automated currency-partner ingestion with zero failed runs and lower compute cost — buffering late, out-of-order inbound batches into one parallelized orchestration. Standardized 15–20 partner pipelines (VideoAmp, EDO) exchanging millions of daily impression records with a team of 7. Shipped event-driven ingestion (S3 → SQS → Lambda → Airflow → EMR → Redshift) with CI/CD and zero manual deployments.",
-            "image": "",
-            "link": "",
-            "github": "",
-            "skills": ["AWS", "S3", "SQS", "Lambda", "Airflow", "EMR", "Redshift"]
-        },
-        "9": {
-            "name": "Abhishek Agrawal's Portfolio",
-            "description": "This site — React SPA with a custom dark palette, glass surfaces, conic-gradient portrait ring, alternating experience timeline, ambient gradients, and a FormSubmit-backed contact flow. Tuned for fast first paint and readable long-form engineering narrative.",
-            "image": "Abhishek Agrawal's Portfolio.png",
-            "link": "https://agrawalabr-portfolio.web.app",
-            "github": "https://github.com/agrawalabr/portfolio",
-            "skills": ["React", "HTML", "CSS", "JavaScript", "github"]
-        }
+    {
+      "quote": "Working alongside Abhishek for 2+ years at InfoCepts, his proficiency in Big Data, Cloud, ETL, Python, Shell, Snowflake, and Databricks was impressive — seamless integration across complex ecosystems.",
+      "from": "Aniket Pathak",
+      "org": "Senior colleague · Infocepts",
+      "relation": "Peer · March 2024"
     },
-    "skills": {
-        "Languages": {
-            "Python": "FaPython",
-            "SQL": "FaDatabase",
-            "Scala": "SiScala",
-            "PySpark": "SiApachespark",
-            "Java": "FaJava",
-            "Go": "SiGo",
-            "JavaScript": "SiJavascript",
-            "TypeScript": "SiTypescript",
-            "Shell/Bash": "SiLinux"
-        },
-        "Big Data": {
-            "Apache Spark": "SiApachespark",
-            "Kafka": "SiApachekafka",
-            "Flink": "SiApacheflink",
-            "Airflow": "SiApacheairflow",
-            "Hadoop": "SiApachehadoop",
-            "Hive": "SiApachehive",
-            "dbt": "SiDbt",
-            "Great Expectations": "SiPython",
-            "ETL/ELT": "TbArrowsJoin2"
-        },
-        "Warehousing & Lakehouse": {
-            "Snowflake": "SiSnowflake",
-            "Databricks": "SiDatabricks",
-            "Unity Catalog": "SiDatabricks",
-            "Iceberg": "SiApachespark",
-            "Delta Lake": "SiDatabricks",
-            "Redshift": "FaAws"
-        },
-        "Databases": {
-            "PostgreSQL": "SiPostgresql",
-            "MySQL": "SiMysql",
-            "MongoDB": "SiMongodb",
-            "Cassandra": "SiApachecassandra"
-        },
-        "Cloud": {
-            "AWS": "FaAws",
-            "GCP": "SiGooglecloud",
-            "Azure": "VscAzure",
-            "BigQuery": "SiGooglebigquery"
-        },
-        "DevOps & CI/CD": {
-            "Docker": "SiDocker",
-            "Kubernetes": "SiKubernetes",
-            "Terraform": "SiTerraform",
-            "GitHub Actions": "SiGithubactions",
-            "GitLab CI": "SiGitlab",
-            "Jenkins": "SiJenkins",
-            "Datadog": "SiDatadog"
-        },
-        "Backend & Frontend": {
-            "Flask": "SiFlask",
-            "FastAPI": "SiFastapi",
-            "Django": "SiDjango",
-            "GraphQL": "SiGraphql",
-            "React": "SiReact",
-            "Angular": "SiAngular",
-            "HTML5": "SiHtml5",
-            "CSS3": "SiCss3",
-            "Tailwind CSS": "SiTailwindcss"
-        },
-        "BI & AI/LLM": {
-            "Tableau": "SiTableau",
-            "Power BI": "VscGraph",
-            "QuickSight": "FaAws",
-            "OpenAI": "SiOpenai",
-            "Claude": "SiClaude",
-            "Hugging Face": "SiHuggingface",
-            "PyTorch": "SiPytorch",
-            "MLOps": "SiMlflow"
-        }
+    {
+      "quote": "Resilience and dedication. A subject-matter expert early in his career — affable, dependable, and poised for leadership. Rare gems like Abhishek become invaluable assets to any team.",
+      "from": "Akash A Wadhankar",
+      "org": "Manager · Infocepts",
+      "relation": "Direct manager · Feb 2024"
     }
+  ],
+  "closing-line": "Let's build something together.",
+  "hiring-line": "Open to full-time Data Engineer roles and high-impact platforms.",
+  "badge": {
+    "id": "AA-0001",
+    "title": "ABHISHEK",
+    "subtitle": "DATA ENGINEER",
+    "role": "Data Engineer",
+    "location": "San Jose, CA",
+    "major": "MS CE · NYU",
+    "year": "2026",
+    "orgs": [
+      { "name": "NBCU", "label": "NBCUniversal", "url": "https://www.nbcuniversal.com/", "logo": "orgs/nbcu.svg", "logoDark": "orgs/nbcu.svg" },
+      { "name": "NYU", "label": "New York University", "url": "https://www.nyu.edu/", "logo": "orgs/nyu.svg", "logoDark": "orgs/nyu.svg" },
+      { "name": "Infocepts", "label": "Infocepts", "url": "https://www.infocepts.ai/", "logo": "orgs/infocepts.svg", "logoDark": "orgs/infocepts-light.svg" },
+      { "name": "RCOEM", "label": "RCOEM", "url": "https://www.rknec.edu/", "logo": "orgs/rcoem.png", "logoDark": "orgs/rcoem.png" }
+    ],
+    "back": {
+      "headline": "Now playing",
+      "stats": [
+        { "k": "60 min", "v": "ahead of Olympics SLA" },
+        { "k": "30%", "v": "cost cut on EMR" },
+        { "k": "~75%", "v": "faster pipeline delivery" },
+        { "k": "5+", "v": "years in production" }
+      ],
+      "note": "Tap again to flip back"
+    }
+  },
+  "facts": [
+    { "label": "Based in", "value": "San Jose, CA" },
+    { "label": "Education", "value": "MS CE, NYU · GPA 3.5" },
+    { "label": "Recent", "value": "RA · NBCU DE II" },
+    { "label": "Experience", "value": "5+ years" },
+    { "label": "Focus", "value": "Architectures · Airflow · Cost" }
+  ],
+  "proud": [
+    { "metric": "60 min", "label": "ahead of Olympics SLA" },
+    { "metric": "30%", "label": "cost cut" },
+    { "metric": "4×", "label": "faster delivery" },
+    { "metric": "~5×", "label": "faster on ~2 TB HPC" }
+  ],
+  "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
+  "phone": "+1 (669) 278-5382",
+  "resume": "Abhishek Agrawal DE.pdf",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/agrawalabr",
+    "github": "https://github.com/agrawalabr"
+  },
+  "experience": [
+    {
+      "org": "New York University",
+      "link": "https://www.nyu.edu/",
+      "roles": [
+        { "title": "Research Assistant", "years": "Dec 2025 – May 2026", "note": "HPC lakehouse & power forecasting" },
+        { "title": "Teaching Assistant", "years": "Aug 2025 – Dec 2025", "note": "Data Engineering course" },
+        { "title": "MS Computer Engineering", "years": "Aug 2024 – May 2026", "note": "GPA 3.5 / 4.0" }
+      ]
+    },
+    {
+      "org": "NBCUniversal",
+      "link": "https://www.nbcuniversal.com/",
+      "roles": [
+        { "title": "Data Engineer II", "years": "Sept 2022 – Aug 2024", "note": "Olympics · Iceberg · Airflow" },
+        { "title": "Data Engineer I", "years": "Aug 2021 – Aug 2022", "note": "Audience Insights · Snowflake" }
+      ]
+    },
+    {
+      "org": "RCOEM",
+      "link": "https://www.rknec.edu/",
+      "roles": [
+        { "title": "BS Computer Engineering", "years": "Aug 2017 – May 2021", "note": "GPA 3.5 / 4.0" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "JobSimp",
+      "category": "PRODUCT · EXTENSION",
+      "blurb": "Chrome extension that cuts job applications from ~20 minutes to a few — autofill, fit scoring, and RAG rewriting.",
+      "features": ["One-click autofill", "Fit verdict + match/miss", "RAG over IndexedDB", "Low-token LLM rewrite"],
+      "skills": ["JavaScript", "RAG", "Gemini", "Claude"],
+      "metric": { "value": "~20→few min", "label": "per app" },
+      "image": "jobsimp.png",
+      "link": "https://jobsimp-widget.web.app/",
+      "github": ""
+    },
+    {
+      "name": "Olympics'24 Migration",
+      "category": "IMPACT · MEDIA",
+      "blurb": "C-suite Olympics reporting 60 mins ahead of SLA. Led 5 engineers to cut monthly cost 30% on EMR Serverless.",
+      "features": ["Zero SLA breaches", "40+ jobs migrated", "30% cost cut", "30+ Airflow pipelines"],
+      "skills": ["Spark", "Airflow", "Iceberg", "AWS", "Redshift"],
+      "metric": { "value": "60 min", "label": "ahead of SLA" },
+      "image": "projects/olympics.jpg",
+      "link": [
+        "https://www.infocepts.ai/blog/the-super-bowl-the-olympics-and-the-art-of-not-losing-your-biggest-revenue-moment/",
+        "https://www.infocepts.ai/blog/24x7-ad-operations-intelligence/"
+      ],
+      "github": ""
+    },
+    {
+      "name": "Alternate Currency Automation",
+      "category": "PLATFORM · MEDIA",
+      "blurb": "Automated currency-partner ingestion with zero failed runs — parallelized orchestration for late/out-of-order batches across VideoAmp, EDO, and more.",
+      "features": ["Zero failed runs", "15–20 partner pipelines", "Event-driven S3→SQS→Lambda→Airflow", "Shared metric refresh"],
+      "skills": ["Airflow", "Spark", "AWS", "Scala", "Python"],
+      "metric": { "value": "faster onboarding", "label": "for partners" },
+      "image": "projects/Infocepts-Performance-Hub_Works_Unified-Measurement.webp",
+      "link": [
+        "https://www.infocepts.ai/industries/media-and-entertainment/performance-insights-hub/",
+        "https://www.infocepts.ai/blog/the-super-bowl-the-olympics-and-the-art-of-not-losing-your-biggest-revenue-moment/"
+      ],
+      "github": ""
+    },
+    {
+      "name": "Audience Insights Hub",
+      "category": "PLATFORM · SELF-SERVICE",
+      "blurb": "~75% faster pipeline delivery — SQL-driven features over 150M+ households without waiting on a DE.",
+      "features": ["One-click SQL features", "Zero-copy sharing", "~20% compute save", "CCPA / RBAC"],
+      "skills": ["Snowflake", "Databricks", "AWS", "Airflow", "Spark", "Terraform"],
+      "metric": { "value": "~75%", "label": "faster" },
+      "image": "Metadata-Driven Data Pipeline Manager.png",
+      "link": "https://together.nbcuni.com/news/nbcuniversal-launches-nbcunified/",
+      "github": ""
+    },
+    {
+      "name": "Enterprise RAG",
+      "category": "AI · RETRIEVAL",
+      "blurb": "Schema-grounded text-to-SQL and doc Q&A — analyst self-service from ~30 minutes to under a minute.",
+      "features": ["Graph metadata catalog", "SQL validation", "Citation-backed answers", "RBAC"],
+      "skills": ["RAG", "Python", "React", "Flask"],
+      "metric": { "value": "<1 min", "label": "self-serve" },
+      "image": "projects/enterprise-rag.jpg",
+      "link": "https://www.nbcuniversal.com/article/nbcuniversal-launches-first-market-cross-platform-innovations-setting-stage-next-era-media-and",
+      "github": ""
+    },
+    {
+        "name": "NYC Housing Sales",
+        "category": "COURSEWORK · ANALYTICS",
+        "blurb": "Turned ~900K messy NYC property-sale records into an analysis-ready lakehouse and Tableau dashboard of a decade of price and affordability shifts.",
+        "features": ["Schema cleanup", "Deduped parcels", "Price-per-sqft trends", "Interactive Tableau"],
+        "skills": ["Python", "AWS S3", "Tableau"],
+        "metric": { "value": "~900K", "label": "records" },
+        "image": "projects/nyc-housing.jpg",
+        "link": "https://www.nyc.gov/site/finance/property/property-rolling-sales-data.page",
+        "github": ""
+      },
+      {
+        "name": "HPC Telemetry Lakehouse",
+        "category": "RESEARCH · ML",
+        "blurb": "~5× faster processing on ~2 TB MIT SuperCloud telemetry, plus GPU power-trace generation (Corr 0.93).",
+        "features": ["16-node Spark lakehouse", "AQE & skew handling", "Diffusion transformer", "4,400+ unseen jobs"],
+        "skills": ["PySpark", "PyTorch", "GCP", "Parquet"],
+        "metric": { "value": "~5×", "label": "faster" },
+        "image": "DiT.mov",
+        "link": "projects/Research Paper.pdf",
+        "github": ""
+      },
+    {
+      "name": "Churn Incentive Engine",
+      "category": "ML · AWS",
+      "blurb": "SageMaker scoring to DynamoDB with Lambda-driven real-time incentives.",
+      "features": ["Batch scoring", "Low-latency lookups", "Lifecycle campaigns"],
+      "skills": ["SageMaker", "DynamoDB", "Lambda"],
+      "metric": { "value": "real-time", "label": "incentives" },
+      "image": "projects/churn.jpg",
+      "link": "",
+      "github": "https://github.com/agrawalabr/churn-predictor"
+    }
+  ],
+  "skills": {
+    "Languages": {
+      "Python": "FaPython",
+      "SQL": "FaDatabase",
+      "Scala": "SiScala",
+      "PySpark": "SiApachespark",
+      "Java": "FaJava",
+      "Go": "SiGo",
+      "JavaScript": "SiJavascript",
+      "TypeScript": "SiTypescript",
+      "Shell/Bash": "SiLinux"
+    },
+    "Big Data": {
+      "Apache Spark": "SiApachespark",
+      "Kafka": "SiApachekafka",
+      "Flink": "SiApacheflink",
+      "Airflow": "SiApacheairflow",
+      "Hadoop": "SiApachehadoop",
+      "Hive": "SiApachehive",
+      "dbt": "SiDbt",
+      "Great Expectations": "SiPython",
+      "ETL/ELT": "TbArrowsJoin2"
+    },
+    "Warehousing & Lakehouse": {
+      "Snowflake": "SiSnowflake",
+      "Databricks": "SiDatabricks",
+      "Unity Catalog": "SiDatabricks",
+      "Iceberg": "SiApachespark",
+      "Delta Lake": "SiDatabricks",
+      "Redshift": "FaAws",
+      "BigQuery": "SiGooglebigquery"
+    },
+    "Databases": {
+      "PostgreSQL": "SiPostgresql",
+      "MySQL": "SiMysql",
+      "MongoDB": "SiMongodb",
+      "Cassandra": "SiApachecassandra"
+    },
+    "Cloud": {
+      "AWS": "FaAws",
+      "GCP": "SiGooglecloud",
+      "Azure": "VscAzure"
+    },
+    "DevOps & CI/CD": {
+      "Docker": "SiDocker",
+      "Kubernetes": "SiKubernetes",
+      "Terraform": "SiTerraform",
+      "GitHub Actions": "SiGithubactions",
+      "GitLab CI": "SiGitlab",
+      "Jenkins": "SiJenkins",
+      "Datadog": "SiDatadog"
+    },
+    "Backend & Frontend": {
+      "Flask": "SiFlask",
+      "FastAPI": "SiFastapi",
+      "Django": "SiDjango",
+      "GraphQL": "SiGraphql",
+      "React": "SiReact",
+      "Angular": "SiAngular",
+      "HTML5": "SiHtml5",
+      "CSS3": "SiCss3",
+      "Tailwind CSS": "SiTailwindcss"
+    },
+    "BI & AI/LLM": {
+      "Tableau": "SiTableau",
+      "Power BI": "VscGraph",
+      "QuickSight": "FaAws",
+      "OpenAI": "SiOpenai",
+      "Claude": "SiClaude",
+      "Hugging Face": "SiHuggingface",
+      "PyTorch": "SiPytorch",
+      "MLOps": "SiMlflow"
+    }
+  }
 }
