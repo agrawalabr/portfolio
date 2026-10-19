@@ -193,15 +193,25 @@ const Profile = () => {
         <section id='projects'>
             <h2 className='section-heading' onClick={() => scrollToSection('projects')}>
                 <div className='highlight'>04.</div>Projects<div className='line'></div></h2>
-                {Object.entries(details.projects).slice(0, 5).map(([key, project]) => {
-                    const isimage = project.image ? (/\.mov$/.test(project.image) ? false : true) : null;
+                {Object.entries(details.projects).slice(0, 8).map(([key, project]) => {
+                    const image = (project.image || '').trim();
+                    const hasMedia = Boolean(image);
+                    const isVideo = hasMedia && /\.(mov|mp4|webm)$/i.test(image);
+                    const mediaSrc = hasMedia
+                        ? (image.startsWith('/') || /^https?:\/\//i.test(image)
+                            ? image
+                            : require(`../../assets/${image}`))
+                        : null;
                     return (
-                    <div key={key} className='project-container'>
-                        {(isimage === null) ? (
-                            <div className='project-image'> <img style={{display: 'block', textAlign: 'center', alignContent: 'center'}} src="" alt={project.name} /></div>
-                        ) : (
-                            isimage ? <div className='project-image'> <img src={require(`../../assets/${project.image}`)} alt={project.name} /></div> :
-                            <div className='project-image'> <video src={require(`../../assets/${project.image}`)} alt={project.name} autoPlay loop muted playsInline /> </div>
+                    <div key={key} className={`project-container${hasMedia ? '' : ' no-image'}`}>
+                        {hasMedia && (
+                            <div className='project-image'>
+                                {isVideo ? (
+                                    <video src={mediaSrc} autoPlay loop muted playsInline />
+                                ) : (
+                                    <img src={mediaSrc} alt={project.name} />
+                                )}
+                            </div>
                         )}
                         <div className='project-item'>
                             <div className='description'>

@@ -1,13 +1,13 @@
 {
     "profile-name": "Abhishek Agrawal",
-    "profile-tagline": "Data & Software Engineer · USA",
-    "profile-description": "<p>Actively seeking opportunities in USA. <br> SME - Data Fabric, Data Catalog & Lineage, Governance, Terraform(IaC),  ETL/ELT, AI/ML, RAG, Backend(Python), Frontend(React), CI/CD across AWS, Snowflake, Databricks. Recently graduated from NYU @2026, Former Data & Software Engineering @NBCUniversal.</p>",
-    "about-tagline": "Give me a spec, I'll build the system that builds the rest!",
+    "profile-tagline": "Data Engineer · San Jose, CA",
+    "profile-description": "<p>Data Engineer with <strong>5+ years</strong> building scalable cloud data platforms on <strong>AWS &amp; GCP</strong>. Recently graduated from <strong>NYU</strong> (MS CE, 2026). Former <strong>Data Engineer II @ NBCUniversal</strong> — Olympics reporting 60 mins ahead of SLA, <strong>30%</strong> cost cut, <strong>~75%</strong> faster delivery.</p>",
+    "about-tagline": "Seeking to turn your toughest data problems into faster, cheaper, automated solutions.",
     "about-me": {
-        "para1": "<p>Hey — I'm Abhishek. For the last <strong>5 years</strong>, I've been building <strong>metadata-driven, declarative data platforms</strong> that turn multi-terabyte chaos into trusted, business-ready data — with cataloging, lineage, GDPR/CCPA governance, zero-copy sharing, and cost/SLA-aware compute. My toolkit: <strong>Spark, Airflow, dbt, AWS, Snowflake, Databricks</strong>.</p>",
-        "para2": "<p>Currently at <strong>NYU</strong>, finishing my <strong>M.S. in Computer Engineering</strong> (May 2026, GPA 3.5) and serving as a <strong>Research Assistant</strong> — architecting a medallion lakehouse over <strong>~2 TB</strong> of MIT SuperCloud HPC telemetry and a two-stage diffusion system to forecast GPU power for datacenter capacity planning. Open to <strong>full-time Data Engineer roles in the U.S.</strong> for Summer 2026.</p>",
-        "para3": "<p>Before that, three years at <strong>NBCUniversal</strong> as a <strong>Data Engineer (Contractor)</strong>. Architected an <strong>enterprise data fabric</strong> across AWS, Snowflake, and Databricks — auto-generating pipelines, infrastructure, and orchestration from metadata (~<strong>75%</strong> faster time-to-market, ~<strong>20%</strong> infra savings). Processed <strong>~75 TB</strong> of ad-impression data, migrated <strong>Olympics 2024</strong> reporting to a serverless stack (under <strong>1 hour</strong> vs. a 2-hour SLA), and shipped a <strong>schema-grounded RAG assistant</strong> for text-to-SQL and document Q&amp;A.</p>",
-        "para4": "<p>I also extend into <strong>generative modeling, RAG, lakehouses, and vector databases</strong> — from credit-risk analytics on Databricks to decade-scale NYC housing market pipelines. I care about clean abstractions, policy-enforced self-service, and pipelines that don't wake you up at 3 AM.</p>"
+        "para1": "<p>Hey — I'm Abhishek. For the last <strong>5+ years</strong>, I've built scalable, resilient cloud data solutions on <strong>AWS &amp; GCP</strong> — leading migrations and automating operations with <strong>Python, SQL, Spark, Airflow, Snowflake, and Databricks</strong>.</p>",
+        "para2": "<p>I just finished my <strong>M.S. in Computer Engineering at NYU</strong> (May 2026, GPA 3.5) and served as a <strong>Research Assistant</strong> — speeding up processing ~5x on <strong>~2 TB</strong> of MIT SuperCloud HPC telemetry and generating GPU power traces (peak Corr = 0.93) for datacenter forecasting. Based in <strong>San Jose, CA</strong> and open to <strong>full-time Data Engineer roles</strong>.</p>",
+        "para3": "<p>At <strong>NBCUniversal</strong>, I progressed from <strong>Data Engineer I → II</strong>. As DE II, I delivered C-suite Olympics'24 ad-performance reports <strong>60 mins ahead of SLA</strong> with zero breaches, cut monthly cost <strong>30%</strong> by leading a team of 5 to migrate 40+ on-prem jobs to Spark on EMR Serverless, and built an Airflow framework that now powers <strong>30+ pipelines</strong> across linear, digital, and CTV. Earlier, I cut pipeline delivery time ~<strong>75%</strong> with one-click, SQL-driven features for audience overlap and ETL over <strong>150M+ household records</strong>.</p>",
+        "para4": "<p>I also ship product-minded side work — from <strong>JobSimp</strong>, a Manifest V3 Chrome extension with RAG-powered job autofill, to decade-scale NYC housing sales analytics. I care about cost-aware compute, zero-breach SLAs, and pipelines that don't wake you up at 3 AM.</p>"
     },
     "emails": ["agrawalabr@gmail.com", "aa9360@nyu.edu"],
     "resume": "Abhishek Agrawal DE.pdf",
@@ -24,25 +24,31 @@
             "name": "New York University@https://www.nyu.edu/",
             "years": "Aug 2025 - Dec 2025",
             "position": "Teaching Assistant",
-            "comment": "Data Engineering Course Support",
+            "comment": "Data Engineering Course — designed & graded full assessment set for 45 students",
             "location": "New York, NY"
         },
         "exp3": {
             "name": "New York University@https://www.nyu.edu/",
-            "badge": "most recent",
             "years": "Aug 2024 - May 2026",
             "position": "M.S. in Computer Engineering",
             "comment": "GPA: 3.5 / 4.0",
             "location": "New York, NY"
         },
         "exp4": {
-            "name": "NBCUniversal@https://www.nbcuniversal.com/",
-            "years": "Aug 2021 - Aug 2024",
-            "position": "Data Engineer (Contractor)",
-            "comment": "Enterprise Data Fabric · Olympics 2024 ETL · Schema-Grounded RAG\n(AWS, Snowflake, Databricks, Airflow, Terraform)",
+            "name": "NBCUniversal Media (Comcast)@https://www.nbcuniversal.com/",
+            "years": "Sept 2022 - Aug 2024",
+            "position": "Data Engineer II",
+            "comment": "C-Suite Olympics'24 Migration · Alt-Currency Automation\n(AWS EMR Serverless, Spark/Scala, Airflow, Iceberg, Redshift)",
             "location": "Pune, IN"
         },
         "exp5": {
+            "name": "NBCUniversal Media (Comcast)@https://www.nbcuniversal.com/",
+            "years": "Aug 2021 - Aug 2022",
+            "position": "Data Engineer I",
+            "comment": "Audience Insights Hub (NBCUnified · Performance Insights Hub)\n(Snowflake, Databricks, Airflow, Terraform, Flask)",
+            "location": "Pune, IN"
+        },
+        "exp6": {
             "name": "Nagpur University (RCOEM)@https://www.rknec.edu/",
             "years": "Aug 2017 - May 2021",
             "position": "B.S. in Computer Engineering",
@@ -52,36 +58,36 @@
     },
     "projects": {
         "1": {
-            "name": "Credit Risk GPT",
-            "description": "Credit-risk analytics platform over ~2.26M Lending Club loans — a governed Databricks lakehouse (Lakeflow Declarative Pipelines, Unity Catalog lineage/RBAC) materializing risk KPIs by grade, vintage, geography, and DTI. Extended with a RAG analyst assistant grounding credit-risk Q&A in CFPB regulatory complaint narratives alongside governed metrics — surfacing consumer-protection and compliance signals raw loan data alone misses.",
-            "image": "gpt.png",
+            "name": "JobSimp",
+            "description": "Manifest V3 Chrome extension that cut per-job application time from ~20 mins to a few minutes — one-click autofill, automated tracking, and job filtering for 30+ applications a day. Scores any posting with a fit verdict and match/miss breakdown, then tailors resume, cover letter, and essay answers via RAG over an IndexedDB property graph, keeping Gemini/Claude/OpenAI token usage low per application.",
+            "image": "",
             "link": "",
             "github": "",
-            "skills": ["Databricks", "PySpark", "Unity Catalog", "AWS S3", "Claude", "OpenAI", "RAG"]
+            "skills": ["JavaScript", "Chrome Extension", "IndexedDB", "RAG", "Gemini", "Claude", "OpenAI"]
         },
         "2": {
             "name": "HPC Telemetry Lakehouse & Power-Forecasting Pipeline",
-            "description": "NYU research: medallion lakehouse over ~2 TB of MIT SuperCloud telemetry — 460K+ compute jobs (98K GPU), V100 GPUs, 9 months — with AQE, partitioning, and skew handling on a 16-node cluster (~80% latency cut). A two-stage diffusion system synthesizes SLURM job metadata and generates conditioned GPU power traces (peak Corr = 0.93) for datacenter power forecasting and capacity planning.",
+            "description": "NYU research: sped up processing ~5x on ~2 TB of MIT SuperCloud telemetry (460K+ jobs) with a medallion lakehouse on a 16-node Spark cluster — AQE, partitioning, and skew handling. A sliding-window autoregressive diffusion transformer conditioned on SLURM job metadata generates GPU power traces for 4,400+ unseen jobs (peak Corr = 0.93) for datacenter power forecasting before jobs run.",
             "image": "DiT.mov",
             "link": "",
             "github": "",
             "skills": ["Python", "PyTorch", "GCP", "PySpark", "Parquet", "SLURM"]
         },
         "3": {
-            "name": "Enterprise Data Fabric",
-            "description": "NBCUniversal declarative data platform: a SQL spec auto-provisions ingestion, transformation, orchestration, and IaC from metadata — collapsing new-pipeline delivery from weeks to hours (~75% faster). Graph-modeled catalog with cross-domain ontologies, automated lineage, GDPR/CCPA RBAC, SLA-driven compute across Lambda/EMR/Databricks/Snowflake (~20% cost savings), and zero-copy sharing — processing ~75 TB of ad-impression data with full observability.",
-            "image": "Metadata-Driven Data Pipeline Manager.png",
-            "link": "",
-            "github": "",
-            "skills": ["AWS", "Snowflake", "Databricks", "Airflow", "Terraform", "Python", "Scala", "Kafka", "Iceberg"]
-        },
-        "4": {
-            "name": "Olympics 2024 Serverless ETL Migration",
-            "description": "Migrated Olympics 2024 ad-impression reporting from on-prem Cassandra and on-demand Databricks to a fully serverless AWS stack under a hard deadline. Re-architected fragmented legacy jobs into a config-driven Airflow framework with parallelized Spark and Lambda tasks — sustaining twice-daily full refresh of 60+ datasets and cutting end-to-end runtime from ~2 hours to under 1 hour (~50%), clearing the 2-hour SLA with headroom.",
+            "name": "C-Suite Olympics'24 Migration",
+            "description": "NBCUniversal DE II rotation: delivered executive ad-performance reports 60 mins ahead of SLA with zero breaches through the Paris Games. Led a team of 5 to migrate 40+ on-prem jobs to Spark (Scala) on EMR Serverless — cutting monthly cost 30% and ending daily failures. Built an Airflow orchestration framework that absorbed a 60% scope expansion and now powers 30+ pipelines across linear, digital, and CTV on an Iceberg lakehouse with Redshift.",
             "image": "olympics.jpg",
             "link": "",
             "github": "",
-            "skills": ["AWS", "EMR Serverless", "Lambda", "Airflow", "Redshift", "Spark", "Python"]
+            "skills": ["AWS", "EMR Serverless", "Spark", "Scala", "Airflow", "Iceberg", "Redshift"]
+        },
+        "4": {
+            "name": "Audience Insights Hub",
+            "description": "NBCUniversal DE I rotation (NBCUnified · Performance Insights Hub): cut pipeline delivery time ~75% with one-click, SQL-driven features for audience overlap, segment activation, and ETL — letting business teams match 150M+ household records without a data engineer. Shared business-name catalog and zero-copy sharing connected siloed departments; SLA-based cluster presets cut compute cost up to ~20%; CCPA/PII purge jobs and RBAC governed compliance across data clean rooms.",
+            "image": "Metadata-Driven Data Pipeline Manager.png",
+            "link": "",
+            "github": "",
+            "skills": ["AWS", "Snowflake", "Databricks", "Airflow", "Terraform", "Spark", "Flask", "PostgreSQL"]
         },
         "5": {
             "name": "Schema-Grounded Enterprise Retrieval (RAG)",
@@ -89,96 +95,113 @@
             "image": "LLM-Based Data Intelligence Platform.png",
             "link": "",
             "github": "",
-            "skills": ["RAG", "ChatGPT", "Hugging Face", "Python", "React", "PostgreSQL"]
+            "skills": ["RAG", "Azure OpenAI", "Hugging Face", "Python", "React", "Flask", "PostgreSQL"]
         },
-        
         "6": {
-            "name": "NYC Housing Pulse (2015–2025)",
-            "description": "S3-backed batch pipeline ingesting ~900K NYC Dept. of Finance property-sale transactions across all 5 boroughs (2015–2025) — resolving inconsistent schemas, malformed addresses, and duplicate parcels into a clean serving layer. Borough- and year-level analytics (price-per-sqft, sales volume, affordability trends) power a QuickSight dashboard tracing a decade of market shifts across neighborhoods and price tiers.",
-            "image": "",
-            "link": "",
-            "github": "",
-            "skills": ["AWS S3", "QuickSight", "Python", "ETL"]
-        },
-        "7": {
-            "name": "Abhishek Agrawal's Portfolio",
-            "description": "This site — React SPA with a custom dark palette, glass surfaces, conic-gradient portrait ring, alternating experience timeline, ambient gradients, and a FormSubmit-backed contact flow. Tuned for fast first paint and readable long-form engineering narrative.",
-            "image": "",
-            "link": "https://agrawalabr-portfolio.web.app",
-            "github": "https://github.com/agrawalabr/portfolio",
-            "skills": ["React", "HTML", "CSS", "Javascript", "github"]
-        },
-        "8": {
             "name": "Churn Prediction & Incentive Engine",
             "description": "End-to-end AWS pattern for churn: curated features in S3, SageMaker training and batch scoring, DynamoDB for low-latency scores, and Lambda functions driving a real-time incentive and segmentation service for lifecycle campaigns and experiments.",
-            "image": "/projects/churn-incentive-engine.svg",
+            "image": "Churn Prediction & Incentive Engine.png",
             "link": "",
             "github": "https://github.com/agrawalabr/churn-predictor",
             "skills": ["AWS", "SageMaker", "DynamoDB", "Lambda", "Python", "github"]
+        },
+        "7": {
+            "name": "NYC Housing Sales (2015–2025)",
+            "description": "NYU coursework: turned ~900K messy NYC Dept. of Finance property-sale records into a clean, analysis-ready lakehouse — resolving inconsistent schemas, malformed addresses, and duplicate parcels. Traced a decade of price-per-sqft, sales-volume, and affordability shifts in an interactive Tableau dashboard by borough, neighborhood, and price tier.",
+            "image": "",
+            "link": "",
+            "github": "",
+            "skills": ["Python", "AWS S3", "Tableau", "ETL"]
+        },
+        "8": {
+            "name": "Alt-Currency Automation",
+            "description": "NBCUniversal DE II rotation: automated currency-partner ingestion with zero failed runs and lower compute cost — buffering late, out-of-order inbound batches into one parallelized orchestration. Standardized 15–20 partner pipelines (VideoAmp, EDO) exchanging millions of daily impression records with a team of 7. Shipped event-driven ingestion (S3 → SQS → Lambda → Airflow → EMR → Redshift) with CI/CD and zero manual deployments.",
+            "image": "",
+            "link": "",
+            "github": "",
+            "skills": ["AWS", "S3", "SQS", "Lambda", "Airflow", "EMR", "Redshift"]
+        },
+        "9": {
+            "name": "Abhishek Agrawal's Portfolio",
+            "description": "This site — React SPA with a custom dark palette, glass surfaces, conic-gradient portrait ring, alternating experience timeline, ambient gradients, and a FormSubmit-backed contact flow. Tuned for fast first paint and readable long-form engineering narrative.",
+            "image": "Abhishek Agrawal's Portfolio.png",
+            "link": "https://agrawalabr-portfolio.web.app",
+            "github": "https://github.com/agrawalabr/portfolio",
+            "skills": ["React", "HTML", "CSS", "JavaScript", "github"]
         }
     },
     "skills": {
-        "Programming": {
+        "Languages": {
             "Python": "FaPython",
             "SQL": "FaDatabase",
-            "PySpark": "SiApachespark",
             "Scala": "SiScala",
+            "PySpark": "SiApachespark",
             "Java": "FaJava",
-            "Shell/Bash": "SiLinux",
+            "Go": "SiGo",
             "JavaScript": "SiJavascript",
-            "React": "SiReact",
-            "Angular": "SiAngular",
-            "HTML": "SiHtml5",
-            "CSS": "SiCss3",
-            "TailwindCSS": "SiTailwindcss"
+            "TypeScript": "SiTypescript",
+            "Shell/Bash": "SiLinux"
         },
-        "Ingestion & Orchestration": {
-            "Spark": "SiApachespark",
+        "Big Data": {
+            "Apache Spark": "SiApachespark",
             "Kafka": "SiApachekafka",
             "Flink": "SiApacheflink",
             "Airflow": "SiApacheairflow",
+            "Hadoop": "SiApachehadoop",
+            "Hive": "SiApachehive",
             "dbt": "SiDbt",
-            "ETL/ELT": "TbArrowsJoin2",
-            "Batch/Stream": "PiGraphThin"
+            "Great Expectations": "SiPython",
+            "ETL/ELT": "TbArrowsJoin2"
         },
-        "Cloud & Governance": {
-            "AWS": "FaAws",
-            "GCP": "SiGooglecloud",
+        "Warehousing & Lakehouse": {
             "Snowflake": "SiSnowflake",
             "Databricks": "SiDatabricks",
-            "Redshift": "FaAws",
             "Unity Catalog": "SiDatabricks",
-            "Iceberg Catalog": "FaAws",
-            "Great Expectations": "SiPython",
-            "RBAC/IAM": "FaShieldAlt"
+            "Iceberg": "SiApachespark",
+            "Delta Lake": "SiDatabricks",
+            "Redshift": "FaAws"
         },
-        "Architectures & Modeling": {
-            "Data Fabric": "TbArrowsJoin2",
-            "Lakehouse": "FaWater",
-            "Metadata Catalog": "SiGraphql",
-            "Zero-Copy Sharing": "SiSnowflake",
-            "Dimensional Modeling": "SiPostgresql"
+        "Databases": {
+            "PostgreSQL": "SiPostgresql",
+            "MySQL": "SiMysql",
+            "MongoDB": "SiMongodb",
+            "Cassandra": "SiApachecassandra"
         },
-        "DataOps & Platform Engineering": {
-            "Terraform": "SiTerraform",
-            "CloudFormation": "FaAws",
+        "Cloud": {
+            "AWS": "FaAws",
+            "GCP": "SiGooglecloud",
+            "Azure": "VscAzure",
+            "BigQuery": "SiGooglebigquery"
+        },
+        "DevOps & CI/CD": {
             "Docker": "SiDocker",
             "Kubernetes": "SiKubernetes",
-            "CI/CD": "IoInfinite",
-            "Git": "SiGit",
-            "CloudWatch": "FaAws",
-            "Flask": "SiFlask",
-            "FastAPI": "SiFastapi"
+            "Terraform": "SiTerraform",
+            "GitHub Actions": "SiGithubactions",
+            "GitLab CI": "SiGitlab",
+            "Jenkins": "SiJenkins",
+            "Datadog": "SiDatadog"
         },
-        "AI/ML & Retrieval": {
+        "Backend & Frontend": {
+            "Flask": "SiFlask",
+            "FastAPI": "SiFastapi",
+            "Django": "SiDjango",
+            "GraphQL": "SiGraphql",
+            "React": "SiReact",
+            "Angular": "SiAngular",
+            "HTML5": "SiHtml5",
+            "CSS3": "SiCss3",
+            "Tailwind CSS": "SiTailwindcss"
+        },
+        "BI & AI/LLM": {
+            "Tableau": "SiTableau",
+            "Power BI": "VscGraph",
+            "QuickSight": "FaAws",
+            "OpenAI": "SiOpenai",
+            "Claude": "SiClaude",
+            "Hugging Face": "SiHuggingface",
             "PyTorch": "SiPytorch",
-            "RAG": "SiOpenai",
-            "Vector Search": "SiElasticsearch",
-            "MLOps": "SiMlflow",
-            "Text-to-SQL": "SiPostgresql",
-            "LLM Integration": "SiOpenai",
-            "Scikit-learn": "SiScikitlearn",
-            "Hugging Face": "SiHuggingface"
+            "MLOps": "SiMlflow"
         }
     }
 }
